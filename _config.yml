@@ -79,18 +79,15 @@ theme: Sakura
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: 
-  github: https://github.com/MoeMoesakura68000/1039987465275834923912.git
-  branch: master
+  repo: https://github.com/MoeMoesakura68000/1039987465275834923912.git
+  branch: gh-pages
 
 # backup
 backup:
   type: git
   message: backup my blog。
-  repository:
-    # github: https://github.com/honjun/honjun.github.io.git,backup
-    github: https://github.com/MoeMoesakura68000/1039987465275834923912.git,backup
-
+  repository: https://github.com/MoeMoesakura68000/1039987465275834923912.git
+  branch: backup
 #RSS
 feed:
   type: atom
