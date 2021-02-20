@@ -1,18 +1,17 @@
-#最小化测试中
 # site name
-prefixName: Little Neko's Blog
-siteName: littleneko
+prefixName: 猫猫 Blog
+siteName: LittleNeko
 # favicon and site master avatar
 favicon: /images/favicon.ico
 avatar: /images/avatar.jpg
 url: https://littleneko.cf
-description: 现在，我们是同志了。
+description: Live your life with passion! With some drive!
 cdn: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6
 pjax: 1
 # 1开启
 mathjax: 0
 
-notice: Hexo Blog via GitPages Online. 最小化测试中，可能出现各种错误。
+notice: hexo Blog Debugging!
 lazyloadImg: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg
 
 menus:
@@ -39,6 +38,8 @@ menus:
     Lab: {path: /lab/, fa: fa-cogs },
   } }
   客户端: { path: /client/, fa: fa-android faa-vertical }
+  RSS: { path: /atom.xml, fa: fa-rss faa-pulse }
+
 
 # Home page sort type: -1: newer first，1: older first.
 homePageSortType: -1
@@ -58,15 +59,16 @@ bg:
 # 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
 bgclass: filter-dot
 
-#startdash url, title, desc img
+# startdash url, title, desc img
 startdash: 
   - {url: /theme-sakura/, title: Sakura, desc: 本站 hexo 主题, img: /img/startdash/sakura.md.png}
-  - {url: http://t.me/momoesakura, title: Telegram, desc: 本站Telegram频道, img: /img/startdash/bilibili.jpg}
-  - {url: /, title: 测试篇, desc: 技术服务, img: /img
+  - {url: http://space.bilibili.com/271849279, title: Bilibili, desc: 博主的b站视频, img: /img/startdash/bilibili.jpg}
+  - {url: /, title: hojun的万事屋, desc: 技术服务, img: /img/startdash/wangshiwu.jpg}
 
+
+
+# your site build time or founded date
 siteBuildingTime: 02/20/2021
-
-
 
 #social  url, img PC端配置
 social:
@@ -75,7 +77,8 @@ social:
   wangyiyun: {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/wangyiyun.png}
   zhihu: {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/zhihu.png}
   email: {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/email.svg}
-  wechat: {url: , qrcode: /img/custom/wechat.jpg, img: /img/social/wechat.png}
+  wechat: {url: /#, qrcode: /img/custom/wechat.jpg, img: /img/social/wechat.png}
+  wechat2: {url: /#, qrcode: /img/custom/wechat.jpg, img: /img/social/wechat.png}
 
 #social  url, img 移动端配置
 msocial:
@@ -111,3 +114,4 @@ aplayer:
 valine: false
 v_appId: GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz
 v_appKey: mgOpfzbkHYqU92CV4IDlAUHQ
+
