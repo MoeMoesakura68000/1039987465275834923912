@@ -1,0 +1,18 @@
+# Header
+menu:
+  首页: /
+  随想: /1/thinkings
+  存档: /1/archive
+  关于: /1/about
+
+# Content
+excerpt_link: 阅读更多
+content_max_width: 800px
+
+# Sidebar
+author:
+  name: Nekoha Shizuku
+  work: *
+  location: Shanghai, China
+  avatar_url: /images/avatar.jpg
+
