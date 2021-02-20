@@ -62,40 +62,18 @@ bgclass: filter-dot
 startdash: 
   - {url: /theme-sakura/, title: Sakura, desc: hexo 主题, img: /img/startdash/sakura.md.png}
 
+#startdash url, title, desc img
+startdash: 
+  - {url: /theme-sakura/, title: Sakura, desc: 本站 hexo 主题, img: /img/startdash/sakura.md.png}
+  - {url: http://t.me/momoesakura, title: Telegram, desc: 本站Telegram频道, img: /img/startdash/bilibili.jpg}
+  - {url: /, title: 测试篇, desc: 技术服务, img: /img
+
 
 # your site build time or founded date
 siteBuildingTime: 2021/02/20
 
 #social  url, img PC端配置
 
-# Home page sort type: -1: newer first，1: older first.
-homePageSortType: -1
-# Home page article shown number)
-homeArticleShown: 10
-# 背景图片 更好的修改
-bg:
-  - https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(1).jpg.webp
-  - https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(2).jpg.webp
-  - https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(3).jpg.webp
-  - https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(4).jpg.webp
-  - https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(5).jpg.webp
-  - https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(6).jpg.webp
-  - https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(7).jpg.webp
-  - https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(8).jpg.webp
-
-# 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
-bgclass: filter-dot
-
-# startdash url, title, desc img
-startdash: 
-  - {url: /theme-sakura/, title: Sakura, desc: 本站 hexo 主题, img: /img/startdash/sakura.md.png}
-  - {url: http://space.bilibili.com/271849279, title: Bilibili, desc: 博主的b站视频, img: /img/startdash/bilibili.jpg}
-  - {url: /, title: hojun的万事屋, desc: 技术服务, img: /img/startdash/wangshiwu.jpg}
-
-
-
-# your site build time or founded date
-siteBuildingTime: 07/17/2018
 
 #social  url, img PC端配置
 social:
