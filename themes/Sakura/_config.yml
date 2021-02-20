@@ -58,21 +58,14 @@ bg:
 # 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
 bgclass: filter-dot
 
-# startdash url, title, desc img
-startdash: 
-  - {url: /theme-sakura/, title: Sakura, desc: hexo 主题, img: /img/startdash/sakura.md.png}
-
 #startdash url, title, desc img
 startdash: 
   - {url: /theme-sakura/, title: Sakura, desc: 本站 hexo 主题, img: /img/startdash/sakura.md.png}
   - {url: http://t.me/momoesakura, title: Telegram, desc: 本站Telegram频道, img: /img/startdash/bilibili.jpg}
   - {url: /, title: 测试篇, desc: 技术服务, img: /img
 
-
-# your site build time or founded date
 siteBuildingTime: 02/20/2021
 
-#social  url, img PC端配置
 
 
 #social  url, img PC端配置
