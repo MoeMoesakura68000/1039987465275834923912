@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Little Neko's Blog
+title: 猫猫 Blog
 subtitle: ~Nya
 description: Little Neko
 keywords:
@@ -73,20 +73,20 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme:Sakura
+theme: Sakura
 
-# Deployment
+#Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
   repo: 
-    github: https://github.com/MoeMoesakura68000/1039987465275834923912.git
+  github: https://github.com/MoeMoesakura68000/1039987465275834923912.git
   branch: master
 
 # backup
 backup:
   type: git
-  message: backup my blog of https://yourname.github.io/
+  message: backup my blog。
   repository:
     # github: https://github.com/honjun/honjun.github.io.git,backup
     github: https://github.com/MoeMoesakura68000/1039987465275834923912.git,backup
