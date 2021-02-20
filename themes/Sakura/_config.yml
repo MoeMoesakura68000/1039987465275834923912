@@ -4,7 +4,7 @@ prefixName: Little Neko's Blog
 siteName: littleneko
 # favicon and site master avatar
 favicon: /images/favicon.ico
-avatar: /img/avatar.jpg
+avatar: /images/avatar.jpg
 url: https://littleneko.cf
 description: 现在，我们是同志了。
 cdn: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6
@@ -70,7 +70,7 @@ startdash:
 
 
 # your site build time or founded date
-siteBuildingTime: 2021/02/20
+siteBuildingTime: 02/20/2021
 
 #social  url, img PC端配置
 
