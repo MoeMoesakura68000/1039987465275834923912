@@ -1,11 +1,11 @@
 # site name
 prefixName: 猫猫 Blog
-siteName: LittleNeko
+siteName: 
 # favicon and site master avatar
 favicon: /images/favicon.ico
 avatar: /images/avatar.jpg
 url: https://littleneko.cf
-description: Live your life with passion! With some drive!
+description: 现在，我们是同志了
 cdn: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6
 pjax: 1
 # 1开启
