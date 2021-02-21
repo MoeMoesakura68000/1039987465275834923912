@@ -6,8 +6,8 @@ on:
       - master
 
 env:
-  GIT_USER: MoeMoesakura68000
-  GIT_EMAIL: cmccadmin90290@protonmail.com
+  GIT_USER: GitHub-Actions
+  GIT_EMAIL: 31182725+MoeMoesakura68000@users.noreply.github.com
   THEME_REPO: honjun/hexo-theme-sakura
   THEME_BRANCH: master
   DEPLOY_REPO: MoeMoesakura68000/1039987465275834923912
