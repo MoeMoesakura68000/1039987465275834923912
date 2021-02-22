@@ -6,7 +6,7 @@ favicon: /images/favicon.ico
 avatar: /images/avatar.jpg
 url: https://littleneko.cf
 description: 现在，我们是同志了
-cdn: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6
+cdn: https://rawcdn-git.littleneko.cf
 pjax: 1
 # 1开启
 mathjax: 0
