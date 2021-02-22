@@ -3,7 +3,7 @@ prefixName: 猫猫Blog
 siteName: 
 # favicon and site master avatar
 favicon: /images/favicon.ico
-avatar: /images/avatar.jpg
+avatar: /img/avatar.jpg
 url: https://littleneko.cf
 description: 现在，我们是同志了
 cdn: https://rawcdn-git.littleneko.cf
