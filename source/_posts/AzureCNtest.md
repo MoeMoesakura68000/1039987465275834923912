@@ -4,11 +4,6 @@ tags: [internet]
 ---
 
 
-[聿纾](https://www.zhihu.com/people/deepdarkfantastic)
-
-INTP/马猴烧酒/智性恋/128的弱智/腹黑/毒舌/死傲娇/科技控/战忽时评员
-
-
 
 
 ## Update 2019/12/6：
