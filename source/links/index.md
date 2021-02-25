@@ -19,15 +19,15 @@ links:
       img: https://s.gravatar.com/avatar/4c1c1becddf4fbf657678220ee14095a?s=250
       name: Totoro
       desc: 
-    -url:https://elsagranger.com
+    - url: https://elsagranger.com
       img: https://s.gravatar.com/avatar/07c7d0b3c95a811de5ac8c86c86e09d8
       name: Elsa Granger
       desc: 
-    - url:https://dogcraft.top/
+    - url: https://dogcraft.top/
       img: https://s.gravatar.com/avatar/4c1c1becddf4fbf657678220ee14095a?s=250
       name: DogCraft
       desc: 
-          - url:https://chanshiyu.com/
+    - url: https://chanshiyu.com/
       img: https://cdn.jsdelivr.net/gh/chanshiyucx/yoi/blog/avatar.jpg
       name: 蝉时雨
       desc: 蝉鸣如雨，花宵道中
