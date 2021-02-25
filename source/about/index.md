@@ -6,32 +6,7 @@ description:
 comments: false
 photos: https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/banner/about.jpg
 ---
-{% raw %}
-<!-- 因为vue和botui更新导至bug,现将对话移至js下的botui中配置 -->
-<div class="entry-content">
-  <div class="moe-mashiro" style="text-align:center; font-size: 50px; margin-bottom: 20px;">[さくら荘のhojun]</div>
-  <div id="hello-mashiro" class="popcontainer" style="min-height: 300px; padding: 2px 6px 4px; background-color: rgba(242, 242, 242, 0.5); border-radius: 10px;">
-    <center>
-    <p>
-    </p>
-    <h4>
-    与&nbsp;<ruby>
-    Mashiro&nbsp;<rp>
-    （</rp>
-    <rt>
-    真（ま）白（しろ）</rt>
-    <rp>
-    ）</rp>
-    </ruby>
-    对话中...</h4>
-    <p>
-    </p>
-    </center>
-    <bot-ui></botui>
-  </div>
-</div>
-<script src="/js/botui.js"></script>
-<script>
-bot_ui_ini()
-</script>
-{% endraw %}
+
+# Nekoha Shizuku Official
+
+图吧不知名垃圾佬,<br>二手垃圾买卖（非）专业户；<br>古董级硬件狂热爱好者；<br>音游退堂鼓级玩家，<br>梆梆最快退游奇迹；<br>Linux Lover，Kali日用用户；<br><br>And So On…
