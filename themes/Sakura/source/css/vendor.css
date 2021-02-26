@@ -1,0 +1,17 @@
+/* responsive bg */
+@media (max-device-width : 667px) {
+    .centerbg {
+        background: url("https://img.2eka.cloud/api/random?type=pe");
+    }
+}
+
+@media (min-device-width : 667px) {
+    .centerbg {
+        background: url("https://img.2eka.cloud/api/random?type=pc");
+    }
+}
+
+.sakurasono {
+    white-space: nowrap;
+    font-size: 23px;
+}

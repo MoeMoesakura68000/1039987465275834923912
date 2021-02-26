@@ -559,17 +559,17 @@ $(document).ready(function () {
 function nextBG () {
   bgindex = bgindex + 1
   console.log(bg[Math.abs(bgindex % bg.length)])
-  $('.centerbg').css('background-image', 'url("' + bg[Math.abs(bgindex % bg.length)] + '")')
+  // $('.centerbg').css('background-image', 'url("' + bg[Math.abs(bgindex % bg.length)] + '")')
 }
 
 function preBG () {
   bgindex = bgindex - 1
   console.log(bg[Math.abs(bgindex % bg.length)])
-  $('.centerbg').css('background-image', 'url("' + bg[Math.abs(bgindex % bg.length)] + '")')
+  // $('.centerbg').css('background-image', 'url("' + bg[Math.abs(bgindex % bg.length)] + '")')
 }
 $(document).ready(function () {
   var bgindex = Math.floor(Math.random() * bg.length)
-  $('.centerbg').css('background-image', 'url("' + bg[bgindex] + '")')
+  // $('.centerbg').css('background-image', 'url("' + bg[bgindex] + '")')
   $('#bg-next').click(function () {
     nextBG()
   })
