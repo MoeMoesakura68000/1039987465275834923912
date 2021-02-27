@@ -180,10 +180,10 @@ function imgError (ele, type) {
       break
     case 3:
 
-      ele.src = 'https://img.2eka.cloud/api/random?pc'
+      ele.src = 'https://img.2eka.cloud/api/random?type=pc'
       break
     default:
-      ele.src = 'https://img.2eka.cloud/api/random?pc'
+      ele.src = 'https://img.2eka.cloud/api/random?type=pc'
   }
 }
 mashiro_global.post_list_show_animation = new function () {
