@@ -1,7 +1,8 @@
+---
 title: 端传媒 | “搬运号”：中国信息壁垒催生的特殊媒体
 date: 2017-3-21
 tags: [internet]
-
+---
 
 
 [原文](https://theinitium.com/article/20170321-mainland-infosmuggler/)
