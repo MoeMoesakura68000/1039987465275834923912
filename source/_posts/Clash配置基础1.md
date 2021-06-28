@@ -12,7 +12,7 @@ Clash是一个基于规则的跨平台网络代理工具，支持诸如Shadowsoc
 
 然而，如果需要更好的**个性化设置**，那么只能对Clash的配置文件进行处理才能更好的让Clash**“为我所用”**。
 
-（Ps:Clash For Windows没有中文么？要不第三方汉化版，要不Google翻译去，总有一款适合你）
+（Q:Clash For Windows没有中文么？A:要不第三方汉化版，要不Google翻译去，总有一款适合你）
 
 Clash的配置文件基于Yaml格式，也正应此，配置文件可读性很高。
 
@@ -461,3 +461,64 @@ C项则是轮换；（爬虫事务有效——一直用一个节点会被拉清�
 
 
 （ps:**安全性很抱歉我们不能确保，就像你搭的SS如果被学校抓了，很难说不会出一个处分。这个问题不是一个clash客户端该讨论的，而是相对于这个协议来讨论的**）
+
+接下来是Rule部分：
+
+这一部分可以说是Clash的关键：<br>
+
+*Clash 是一款用Go 语言编写的、基于规则的隧道（Tunnel ）程序，它支持多种加密通信协议和跨平台*
+
+```Yaml
+Rule:
+- DOMAIN-SUFFIX,google.cn,DIRECT
+```
+
+此句定义了一个规则：
+
+DOMAIN-SUFFIX:按域名前缀匹配，此处即"*.google.cn"
+
+DIRECT:直连
+
+```Yaml
+- DOMAIN-KEYWORD,twitter,自选
+```
+
+DOMAIN-KEYWORD:以关键词匹配，本例中匹配“twitter"（即凡是遇到twitter都走“自选”）
+
+```Yaml
+- USER-AGENT,niconico*,自选
+```
+USER-AGENT:用[useragent字符串](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/User-Agent)进行匹配；（在本例中凡是遇到有niconico就走“自选”）
+
+
+```Yaml
+- DOMAIN,www.flash.cn,REJECT
+```
+
+DOMAIN:对www.flash.cn精准匹配
+
+REJECT:拒绝连接
+
+
+```Yaml
+- IP-CIDR,91.108.4.0/22,LowDelay,no-resolve
+```
+
+IP-CIDR:此句为[CIDR语法](https://zh.wikipedia.org/zh-hans/%E6%97%A0%E7%B1%BB%E5%88%AB%E5%9F%9F%E9%97%B4%E8%B7%AF%E7%94%B1)
+,可以使用[此计算器](https://zh.rakko.tools/tools/27/)来确定范围。
+
+no-resolve:告诉Clash不要去尝试解析来匹配这条规则，只处理「直接IP 访问」的请求。
+
+
+
+
+```Yaml
+Match:
+ - 自选
+ ```
+该句只能放在末尾，指定漏网之🐟该走哪个代理。
+
+
+通过结合以上内容可以很方便的拉出来一份代理清单。
+
+以上就是本期内容，我们下期再见（
