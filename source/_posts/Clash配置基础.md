@@ -1,8 +1,9 @@
 ---
 title: Clash配置文件·基础篇
-date: 2021-04-30
+date: 2021-07-01
 tags: [internet]
 ---
+*庆祝Chinese Communist Party 100th Anniversary*
 
 Clash是一个基于规则的跨平台网络代理工具，支持诸如Shadowsocks/V2Ray/Trojan等协议，功能强大，界面美观。
 
@@ -513,12 +514,34 @@ no-resolve:告诉Clash不要去尝试解析来匹配这条规则，只处理「�
 
 
 ```Yaml
-Match:
- - 自选
- ```
+
+- MATCH,Final
+
+```
+
 该句只能放在末尾，指定漏网之🐟该走哪个代理。
 
 
-通过结合以上内容可以很方便的拉出来一份代理清单。
+通过结合以上内容可以很方便的拉出来一份代理清单。<br>
+Such As Telegram：
+
+```Yaml
+- DOMAIN-SUFFIX,t.me,PROXY
+- DOMAIN-SUFFIX,tlanyan.me,PROXY
+- DOMAIN-SUFFIX,tdesktop.com,PROXY
+- DOMAIN-SUFFIX,telegra.ph,PROXY
+- DOMAIN-SUFFIX,telegram.me,PROXY
+- DOMAIN-SUFFIX,telegram.org,PROXY
+- DOMAIN-SUFFIX,telesco.pe,PROXY
+- IP-CIDR,91.108.4.0/22,PROXY,no-resolve
+- IP-CIDR,91.108.8.0/22,PROXY,no-resolve
+- IP-CIDR,91.108.12.0/22,PROXY,no-resolve
+- IP-CIDR,91.108.16.0/22,PROXY,no-resolve
+- IP-CIDR,91.108.56.0/22,PROXY,no-resolve
+- IP-CIDR,149.154.160.0/20,PROXY,no-resolve
+- IP-CIDR,2001:b28:f23d::/48,PROXY,no-resolve
+- IP-CIDR,2001:b28:f23f::/48,PROXY,no-resolve
+- IP-CIDR,2001:67c:4e8::/48,PROXY,no-resolve
+```
 
 以上就是本期内容，我们下期再见（
