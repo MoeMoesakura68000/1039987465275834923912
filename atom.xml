@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>さくら荘その貓貓樂園</title>
+  
+  <subtitle>~Nya</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="/"/>
+  <updated>2021-07-02T11:14:08.514Z</updated>
+  <id>/</id>
+  
+  <author>
+    <name>Nekoha Shizuku</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Clash配置文件·基础篇</title>
+    <link href="/2021/07/01/Clash%E9%85%8D%E7%BD%AE%E5%9F%BA%E7%A1%80/"/>
+    <id>/2021/07/01/Clash配置基础/</id>
+    <published>2021-06-30T16:00:00.000Z</published>
+    <updated>2021-07-02T11:14:08.514Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;em&gt;庆祝Chinese Communist Party 100th
+        
+      
+    
+    </summary>
+    
+    
+      <category term="internet" scheme="/tags/internet/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>十六人格入门</title>
+    <link href="/2021/03/20/%E5%8D%81%E5%85%AD%E4%BA%BA%E6%A0%BC/"/>
+    <id>/2021/03/20/十六人格/</id>
+    <published>2021-03-20T15:53:00.000Z</published>
+    <updated>2021-07-02T11:14:08.514Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Es 类型 数量最多最普遍的大类 外向 注重现实世界&lt;/p&gt;
+&lt;p&gt;ESFJ：可以说是基数最多的一种类型了，这类人格总是非常的热情，比较感性，然后喜欢帮忙，有点爱管教人（生活琐事上）
+        
+      
+    
+    </summary>
+    
+      <category term="生活" scheme="/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>SSH 使用小记</title>
+    <link href="/2021/03/17/note-on-ssh/"/>
+    <id>/2021/03/17/note-on-ssh/</id>
+    <published>2021-03-16T16:00:00.000Z</published>
+    <updated>2021-07-02T11:14:08.514Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;以下为个人使用小结，仅供参考。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;SSH 分为客户端与服务端，需要尽可能保证最新以防止可能存在的安全漏洞。不同的发行版可能安装包名不一样。大部分发行版自带 SSH，并系统自启。对于不自带的（如安卓上的
+        
+      
+    
+    </summary>
+    
+    
+      <category term="linux" scheme="/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo GitPages 测试完毕!</title>
+    <link href="/2021/03/04/hello-world/"/>
+    <id>/2021/03/04/hello-world/</id>
+    <published>2021-03-03T16:00:00.000Z</published>
+    <updated>2021-07-02T11:14:08.514Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;拖了这么久了终于修改完了.PNG&lt;br&gt;（此文件暂当模板使用）&lt;/p&gt;
+
+        
+      
+    
+    </summary>
+    
+    
+      <category term="internet" scheme="/tags/internet/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>国内运营商评测</title>
+    <link href="/2020/11/10/ISP/"/>
+    <id>/2020/11/10/ISP/</id>
+    <published>2020-11-09T16:00:00.000Z</published>
+    <updated>2021-07-02T11:14:08.514Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/64401058&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;上一篇文章&lt;/a&gt;里，我们探究了中国大陆商用 VPS
+        
+      
+    
+    </summary>
+    
+    
+      <category term="internet" scheme="/tags/internet/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Azure中国评测</title>
+    <link href="/2020/11/10/AzureCNtest/"/>
+    <id>/2020/11/10/AzureCNtest/</id>
+    <published>2020-11-09T16:00:00.000Z</published>
+    <updated>2021-07-02T11:14:08.514Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Update-2019-12-6：&quot;&gt;&lt;a href=&quot;#Update-2019-12-6：&quot; class=&quot;headerlink&quot; title=&quot;Update 2019/12/6：&quot;&gt;&lt;/a&gt;Update 2019/12/6：&lt;/h2&gt;&lt;h1
+        
+      
+    
+    </summary>
+    
+    
+      <category term="internet" scheme="/tags/internet/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo写博客指南</title>
+    <link href="/2015/07/17/1/"/>
+    <id>/2015/07/17/1/</id>
+    <published>2015-07-16T16:00:00.000Z</published>
+    <updated>2021-07-02T11:14:08.514Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;github pages + node.js + hexo 写博客&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="internet" scheme="/tags/internet/"/>
+    
+  </entry>
+  
+</feed>
