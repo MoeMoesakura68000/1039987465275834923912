@@ -5,7 +5,7 @@ date: 2018-12-20 23:13:05
 keywords: Nya~
 description: 
 comments: false
-photos: https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/banner/donate.jpg
+photos: https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn/raw/master/img/banner/donate.jpg
 ---
 
 ![XMR](https://imgcdn-git.littleneko.cf/IMG_20210225_234212.png)<br>
