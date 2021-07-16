@@ -6,7 +6,7 @@ favicon: /images/favicon.ico
 avatar: /img/avatar.jpg
 url: https://littleneko.cf
 description: 星火，日月，流年
-cdn: https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn/raw/master/
+cdn: https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn/raw/master
 pjax: 1
 # 1开启
 mathjax: 0
