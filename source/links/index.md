@@ -5,7 +5,7 @@ date: 2021-2-24 22:49:06
 keywords: 友人帐
 description: 
 comments: true
-photos: https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/banner/links.jpg
+photos: https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn/raw/master/img/banner/links.jpg
 links:
   - group: 小伙伴们
     desc:  ꉂ(ˊᗜˋ)
