@@ -81,11 +81,11 @@ social:
 #  qq: {url: https://wpa.qq.com/msgrd?v=3&uin=954655431&site=qq&menu=yes, fa: fa-qq, color: 25c6fe}
 
 
-# 视频地址为https://cdn.jsdelivr.net/gh/honjun/hojun@1.2/Unbroken.mp4，配置如下
+# Lemon!
 movies:
-  url: https://cdn.jsdelivr.net/gh/honjun/hojun@1.2
+  url: https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn0101/raw/master/
 #  # 多个视频用逗号隔开，随机获取。支持的格式目前已知MP4,Flv。其他的可以试下，不保证有用
-  name: Unbroken.mp4
+  name: 109819229-1-208.mp4
 
 #好耶,是Minecraft!
 aplayer:
