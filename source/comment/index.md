@@ -4,7 +4,7 @@ date: 2018-12-20 23:13:48
 keywords: 留言板
 description: 
 comments: true
-photos: https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/banner/comment.jpg
+photos: https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn/raw/master/img/banner/comment.jpg
 ---
 {% raw %}
 <div class="entry-content">
@@ -16,9 +16,9 @@ photos: https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/banner/comment.jpg
     <h1>
     念两句诗</h1>
     <p id="poem">
-    叙别梦、扬州一觉。</p>
+    苟利國家生死以，豈因禍福避趨之！</p>
     <p id="info">
-    【宋代】吴文英《夜游宫·人去西楼雁杳》</p>
+    【清代】林则徐《赴戍登程口占示家人·其二》</p>
   </div>
 </div>
 {% endraw %}
