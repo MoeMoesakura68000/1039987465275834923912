@@ -321,7 +321,7 @@ function attach_image () {
             $('.insert-image-tips').html('<i class="fa fa-picture-o" aria-hidden="true"></i>')
           }, 1000)
           var get_the_url = res.data.url.replace('https://i.loli.net/', 'https://static.shino.cc/user-upload/')
-          $('#upload-img-show').append('<img class="lazyload upload-image-preview" src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.0.2/img/svg/loader/trans.ajax-spinner-preloader.svg" data-src="' + get_the_url + '" onclick="window.open(\'' + get_the_url + '\')" onerror="imgError(this)" />')
+          $('#upload-img-show').append('<img class="lazyload upload-image-preview" src="https://gitee.com/c4e78670-7d9c-11eb-aafd/sakuracdn2/raw/master/img/svg/loader/trans.ajax-spinner-preloader.svg" data-src="' + get_the_url + '" onclick="window.open(\'' + get_the_url + '\')" onerror="imgError(this)" />')
           lazyload()
           addComment.createButterbar('图片上传成功~<br>Uploaded successfully~')
           grin(res.data.url.replace('https://i.loli.net/', '{UPLOAD}'), type = 'Img')
@@ -432,7 +432,7 @@ function checkBgImgCookie () {
     $('#banner_wave_2').addClass('banner_wave_hide_fit_skin')
   }
   if (bgurl != '') {
-    if (bgurl == 'https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn/raw/master/img/themebg/sakura.png' || bgurl == 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/themebg/plaid.jpg' || bgurl == 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/themebg/star.png' || bgurl == 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/themebg/point.png' || bgurl == 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/themebg/little-monster.png') {
+    if (bgurl == 'https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn/raw/master/img/themebg/sakura.png' || bgurl == 'https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn/img/themebg/plaid.jpg' || bgurl == 'https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn/raw/master/img/themebg/star.png' || bgurl == 'https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn/raw/master/img/themebg/point.png' || bgurl == 'https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn/raw/master/img/themebg/little-monster.png') {
       mashiro_global.variables.skinSecter = true
       mashiro_global.variables.isNight = false
       $('#night-mode-cover').css('visibility', 'hidden')
@@ -499,11 +499,11 @@ $(document).ready(function () {
       setCookie('bgImgSetting', url, 30)
     })
   }
-  changeBG('#sakura-bg', 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/themebg/sakura.png')
+  changeBG('#sakura-bg', 'https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn/raw/master/img/themebg/sakura.png')
   changeBG('#gribs-bg', 'https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn/raw/master/img/themebg/plaid.jpg')
-  changeBG('#pixiv-bg', 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/themebg/star.png')
-  changeBG('#KAdots-bg', 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/themebg/point.png')
-  changeBG('#totem-bg', 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/themebg/little-monster.png')
+  changeBG('#pixiv-bg', 'https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn/raw/master/img/themebg/star.png')
+  changeBG('#KAdots-bg', 'https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn/raw/master/img/themebg/point.png')
+  changeBG('#totem-bg', 'https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn/raw/master/img/themebg/little-monster.png')
   changeBGnoTrans('#bing-bg', 'https://api.shino.cc/bing/')
   $('.skin-menu #white-bg').click(function () {
     mashiro_global.variables.skinSecter = false
@@ -781,7 +781,7 @@ function grin (tag, type, before, after) {
   } else if (type == 'Img') {
     tag = '[img]' + tag + '[/img]'
   } else if (type == 'Math') {
-    tag = ' f(x)=∫(' + tag + ')sec²xdx '
+    tag = ' f(x)=∫(' + tag + ')sec2xdx '
   } else {
     tag = ' :' + tag + ': '
   }
@@ -993,7 +993,7 @@ function get_poem (poem_ele, info_ele) {
 //         if (mashiro_global.variables.has_bot_ui) {
 //             bot_ui_ini();
 //         } else {
-//             $.getScript('https://cdn.jsdelivr.net/gh/moezx/cdn@latest/js/botui/botui.js', function () {
+//             $.getScript('https://gitee.com/c4e78670-7d9c-11eb-aafd/sakuracdn2/raw/master/js/botui/botui.js', function () {
 //                 bot_ui_ini();
 //                 mashiro_global.variables.has_bot_ui = true;
 //             });
@@ -1021,10 +1021,10 @@ var currentFontIsUbuntu = true
 
 // function changeFont() {
 //     if (currentFontIsUbuntu) {
-//         loadCSS("https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.8/css/cn.css");
+//         loadCSS("https://gitee.com/c4e78670-7d9c-11eb-aafd/sakuracdn2/raw/master/css/cn.css");
 //         currentFontIsUbuntu = false;
 //     } else {
-//         loadCSS("https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.8/css/or.css");
+//         loadCSS("https://gitee.com/c4e78670-7d9c-11eb-aafd/sakuracdn2/raw/master/css/or.css");
 //         currentFontIsUbuntu = true;
 //     }
 // }
@@ -1033,12 +1033,12 @@ var currentFontIsUbuntu = true
 //     if (zh == 'cn') {
 //         $("#zh_cn").css("display", "none");
 //         $("#zh_tw").css("display", "inline-block");
-//         loadCSS("https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.8/css/tw.css");
+//         loadCSS("https://gitee.com/c4e78670-7d9c-11eb-aafd/sakuracdn2/raw/master/css/tw.css");
 //     }
 //     if (zh == 'tw') {
 //         $("#zh_tw").css("display", "none");
 //         $("#zh_cn").css("display", "inline-block");
-//         loadCSS("https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.8/css/cn.css");
+//         loadCSS("https://gitee.com/c4e78670-7d9c-11eb-aafd/sakuracdn2/raw/master/css/cn.css");
 //     }
 // }
 mashiro_global.ini.normalize()
@@ -1634,9 +1634,9 @@ if ((isWebkit || isOpera || isIe) && document.getElementById && window.addEventL
 }
 // loadCSS(mashiro_option.jsdelivr_css_src);
 // loadCSS("https://at.alicdn.com/t/font_679578_dishi1yoavm.css");
-// loadCSS("https://cdn.jsdelivr.net/gh/moezx/cdn@3.5.4/fonts/Moe-Mashiro/stylesheet.css");
+// loadCSS("https://gitee.com/c4e78670-7d9c-11eb-aafd/sakuracdn2/raw/master/fonts/Moe-Mashiro/stylesheet.css");
 // loadCSS("https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700");
-// loadCSS("https://cdn.jsdelivr.net/gh/moezx/cdn@3.3.9/css/sharejs.css");;
+// loadCSS("https://gitee.com/c4e78670-7d9c-11eb-aafd/sakuracdn2/raw/master/css/sharejs.css");;
 
 function render (template, context) {
   var tokenReg = /(\\)?\{([^\{\}\\]+)(\\)?\}/g
