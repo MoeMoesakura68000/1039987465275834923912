@@ -42,7 +42,7 @@ rime默认的输入方式是非常违和的
 
 选中默认词库列表，点击“導入文本碼表”导入词库
 
-![image-20210722221826032](https://raw.githubusercontent.com/MoeMoesakura68000/1/master/img032034/202107222218906.png)
+![image-20210722221826032](https://imgcdn-git.littleneko.cf/img032034/202107222218906.png)
 
 你就获得了一份非常爽的词库（
 
