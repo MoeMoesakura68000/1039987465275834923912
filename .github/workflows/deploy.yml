@@ -62,7 +62,7 @@ jobs:
         run: |
           npm install
           npm i --save hexo-wordcount
-
+          npm audit fix
       - name: Deploy hexo
         run: |
          git gc --prune=now
