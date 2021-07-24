@@ -1,8 +1,8 @@
 avatar: https://imgcdn-git.littleneko.cf/IMG_20210226_221158.jpg # 网站 Logo
 background: # 既是博客的背景，又是文章默认头图
   path: https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn/raw/master/1.jpg
-  width: 789
-  height: 1200
+  width: 395
+  height: 600
 favicon:
   href: /favicon.ico # 网站图标
   type: image/x-icon # 图标类型，可能的值有(image/png, image/vnd.microsoft.icon, image/x-icon, image/gif)
@@ -41,8 +41,8 @@ menu:
   关于博客:
     - /about.html
     - icon-info-circle
-  我的朋友: 
-    - /PY.html # 使用说明：https://docs.nexmoe.com/article/py
+#  我的朋友: 
+#    - /PY.html # 使用说明：https://docs.nexmoe.com/article/py
 
 widgets:
 - search
