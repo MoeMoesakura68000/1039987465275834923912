@@ -12,9 +12,9 @@ function: # 功能开关，可选值（true,false）
   
 
 highlight:
-  enable: true
+  enable: false
   auto_detect: false
-  line_number: true
+  line_number: false
 
 # 附加图标库 使用说明：https://docs.nexmoe.com/config/icon
 iconlib: # //at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css
