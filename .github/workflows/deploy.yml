@@ -8,7 +8,7 @@ on:
 env:
   GIT_USER: GitHub-Actions
   GIT_EMAIL: 31182725+MoeMoesakura68000@users.noreply.github.com
-  THEME_REPO: theme-nexmoe/hexo-theme-nexmoe
+  THEME_REPO: honjun/hexo-theme-sakura
   THEME_BRANCH: master
   DEPLOY_REPO: MoeMoesakura68000/1039987465275834923912
   DEPLOY_BRANCH: master
