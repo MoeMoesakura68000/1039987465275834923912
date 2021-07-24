@@ -16,3 +16,8 @@ author:
   location: Shanghai, China
   avatar_url: /images/avatar.jpg
 
+
+highlight:
+  enable: true
+  auto_detect: true
+  line_number: true
