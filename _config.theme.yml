@@ -50,6 +50,6 @@ highlight:
   hljs: true
 prismjs:
   enable: false
-  preprocess: true
+  preprocess: false
   line_number: false
   tab_replace: ''
