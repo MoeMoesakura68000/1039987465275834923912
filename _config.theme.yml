@@ -18,6 +18,9 @@ author:
 
 
 highlight:
+  enable: false
+prismjs:
   enable: true
-  auto_detect: true
+  preprocess: true
   line_number: true
+  tab_replace: ''
