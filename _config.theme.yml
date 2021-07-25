@@ -28,14 +28,14 @@ author:
 
 
 highlight:
-  enable: true
+  enable: false
   auto_detect: true
   line_number: true
   tab_replace: ''
   wrap: true
   hljs: true
 prismjs:
-  enable: false
+  enable: true
   preprocess: true
   line_number: true
   tab_replace: ''
