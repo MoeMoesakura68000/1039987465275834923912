@@ -43,13 +43,10 @@ author:
 
 highlight:
   enable: true
-  auto_detect: true
+  auto_detect: false
   line_number: true
-  tab_replace: ''
+  tab_replace: '  '
   wrap: true
-  hljs: true
+  hljs: false
 prismjs:
   enable: false
-  preprocess: false
-  line_number: false
-  tab_replace: ''
