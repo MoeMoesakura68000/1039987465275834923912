@@ -17,14 +17,15 @@ author:
   avatar_url: /images/avatar.jpg
 
 
-#highlight:
-#  enable: false
-#prismjs:
-#  enable: true
-#  preprocess: true
-#  line_number: true
-#
-#  tab_replace: ''
+highlight:
+  enable: false
+prismjs:
+  enable: true
+  preprocess: true
+  line_number: true
+
+
+  tab_replace: ''
 
 
 #highlight:
@@ -41,12 +42,12 @@ author:
 #  tab_replace: ''
 
 
-highlight:
-  enable: true
-  auto_detect: false
-  line_number: true
-  tab_replace: '  '
-  wrap: true
-  hljs: false
-prismjs:
-  enable: false
+#highlight:
+#  enable: true
+#  auto_detect: false
+#  line_number: true
+#  tab_replace: '  '
+#  wrap: true
+#  hljs: false
+#prismjs:
+#  enable: false
