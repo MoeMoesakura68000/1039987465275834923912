@@ -27,8 +27,8 @@ author:
 
 highlight:
   enable: true
-  hljs: true
   auto_detect: true
+  line_number: true
 prismjs:
   enable: false
 
