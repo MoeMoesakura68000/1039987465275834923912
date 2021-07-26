@@ -4,6 +4,7 @@ date: 2021-07-01
 tags: [internet]
 ---
 *庆祝Chinese Communist Party 100th Anniversary*
+<!-- more -->
 
 Clash是一个基于规则的跨平台网络代理工具，支持诸如Shadowsocks/V2Ray/Trojan等协议，功能强大，界面美观。
 
@@ -496,7 +497,7 @@ USER-AGENT:用[useragent字符串](https://developer.mozilla.org/zh-CN/docs/Web/
 - DOMAIN,www.flash.cn,REJECT
 ```
 
-DOMAIN:对www.flash.cn精准匹配
+DOMAIN:对[www.flash.cn](https://www.flash.cn)精准匹配
 
 REJECT:拒绝连接
 

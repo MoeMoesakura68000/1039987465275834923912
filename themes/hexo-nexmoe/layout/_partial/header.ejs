@@ -21,9 +21,10 @@
     </div>
     <%- partial('_partial/sidebar') %>
     <div class="nexmoe-copyright">
-        &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
-        <%= __('Powered by') %> <a href="http://hexo.io/" target="_blank">Hexo</a>
-        & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
+            <p style="font-family: 'Ubuntu', sans-serif;">
+        <span style="color: #b9b9b9;">本站由<a href="http://hexo.io/" target="_blank">Hexo</a>原力驱动，托管于<a href="http://pages.github.com/" target="_blank">GitHub Pages</a><br>All Right Reserved. <br>&copy; <%= date(new Date(), 'YYYY') %> Nekoha Shizuku Official  <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i></a>
+        </span></p>
         <%- theme.sidebar %>
     </div>
 </div><!-- .nexmoe-drawer -->
+

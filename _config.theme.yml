@@ -16,3 +16,42 @@ author:
   location: Shanghai, China
   avatar_url: /images/avatar.jpg
 
+
+#highlight:
+#  enable: false
+#prismjs:
+#  enable: true
+#  preprocess: true
+#  line_number: true
+#  tab_replace: ''
+
+highlight:
+  enable: true
+  auto_detect: true
+  line_number: true
+prismjs:
+  enable: false
+
+#highlight:
+#  enable: false
+#  auto_detect: true
+#  line_number: true
+#  tab_replace: ''
+#  wrap: true
+#  hljs: true
+#prismjs:
+#  enable: true
+#  preprocess: true
+#  line_number: true
+#  tab_replace: ''
+
+
+#highlight:
+#  enable: true
+#  auto_detect: false
+#  line_number: true
+#  tab_replace: '  '
+#  wrap: true
+#  hljs: false
+#prismjs:
+#  enable: false
