@@ -17,16 +17,20 @@ author:
   avatar_url: /images/avatar.jpg
 
 
+#highlight:
+#  enable: false
+#prismjs:
+#  enable: true
+#  preprocess: true
+#  line_number: true
+#  tab_replace: ''
+
 highlight:
-  enable: false
-prismjs:
   enable: true
-  preprocess: true
-  line_number: true
-  tab_replace: ''
-
-
-
+  hljs: true
+  auto_detect: true
+prismjs:
+  enable: false
 
 #highlight:
 #  enable: false
