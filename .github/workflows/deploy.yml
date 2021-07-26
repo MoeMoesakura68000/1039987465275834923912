@@ -65,7 +65,7 @@ jobs:
           npm audit fix
       - name: Deploy hexo
         run: |
-
+         npm run clean
          git gc --prune=now
          npm run deploy
-         npm run clean
+
