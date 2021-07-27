@@ -47,4 +47,60 @@ rime默认的输入方式是非常违和的
 
 你就获得了一份非常爽的词库（
 
-(未完待续)
+# 外观配置
+
+默认的图上面有了（很明显不符合现代输入法习惯）
+
+所以我们需要手动写配置：）
+
+打开用户文件夹（即上方导入用户词典下一个）然后打开weasel.custom.yaml进行配置：
+
+```yaml
+patch:
+
+  
+  
+  "preset_color_schemes/Wii2":
+    author: PYatoo
+    back_color: 0xefefef
+    border_color: 0xefefef
+    candidate_text_color: 0x575759
+    comment_text_color: 0xcac9c8
+    hilited_back_color: 0xefefef
+    hilited_candidate_back_color: 0xED9564
+    hilited_candidate_text_color: 0xffffff
+    hilited_comment_text_color: 0xffffff
+    hilited_text_color: 0xED9564
+    label_color: 0xcac9c8
+    name: Wii2
+    text_color: 0x575759
+  "style/color_scheme": Wii2
+  "style/display_tray_icon": true
+  "style/font_face": "Microsoft Yahei UI"
+  "style/font_point": 12
+  "style/horizontal": true
+  "style/inline_preedit": false
+  "style/layout/border": 0
+  "style/layout/border_width": 0
+  "style/layout/candidate_spacing": 12
+  "style/layout/hilite_padding": 8
+  "style/layout/hilite_spacing": 3
+  "style/layout/margin_x": 8
+  "style/layout/margin_y": 8
+  "style/layout/round_corner": 7
+  "style/layout/spacing": 10
+```
+
+这是我用的主题，看着观感尚佳（芜湖）
+
+![image-20210727225458566](https://raw.githubusercontent.com/MoeMoesakura68000/1/master/img032034/202107272300900.png) 
+
+切记：此文件中的Patch只能出现一次，不能重复。
+
+#### 关于颜色
+
+rime主题里的16进制颜色为‘蓝’‘绿’‘红’排序，并未是常规的‘红’‘绿’‘蓝’
+
+比如说我需要的是‘#123456’这一颜色，则写为：‘#563412’
+
+（按：是不是有什么大病）
