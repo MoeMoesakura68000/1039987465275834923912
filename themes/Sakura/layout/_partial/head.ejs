@@ -21,6 +21,8 @@
   }
   %>
   <title itemprop="name"><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
+ <meta name="keywords" content="%= config.title %" />
+    <meta name="description" content="%= config.title %" />
   <% if (theme.favicon){ %>
     <link rel="shortcut icon" href="<%- theme.favicon %>">
   <% } %>
