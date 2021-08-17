@@ -31,5 +31,8 @@ links:
       img: https://cdn.jsdelivr.net/gh/chanshiyucx/yoi/blog/avatar.jpg
       name: 蝉时雨
       desc: 蝉鸣如雨，花宵道中
-      
+    - url: https://nekohuan.cyou/
+      img: https://nekohuan.cyou/325D8FB0-F0B5-458B-90A3-19AC0508643E.jpeg
+      name: 郭桓桓的小站
+      desc: 蝉鸣如雨，花宵道中
 ---
