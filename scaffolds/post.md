@@ -1,11 +1,11 @@
 ---
 title: {{ title }}
 date: {{ date }}
-author: hojun
-avatar: https://wx1.sinaimg.cn/large/006bYVyvgy1ftand2qurdj303c03cdfv.jpg
-authorLink: hojun.cn
-authorAbout: 一个好奇的人
-authorDesc: 一个好奇的人
+author: Nekoha Shizuku
+avatar: 
+authorLink: littleneko.cf
+authorAbout: 我们与我们的未来，在无限的未知中前行
+authorDesc: 我们与我们的未来，在无限的未知中前行
 categories: 技术
 comments: true
 tags: 
