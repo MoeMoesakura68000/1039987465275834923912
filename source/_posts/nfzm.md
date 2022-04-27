@@ -352,7 +352,7 @@ tags: [internet]
 
 　　 　万物速朽，但梦想永在。我们倾听你的梦想，我们期待你敢于做梦：不是杰出者才做梦，而是善做梦者才杰出。我们别无所倚，惟有对期许的追求；我们别无所长，惟有对承诺的执著。
     
-> 后记：(2013年《南方周末》新年特刊事件:)[https://zh.wikipedia.org/wiki/2013%E5%B9%B4%E3%80%8A%E5%8D%97%E6%96%B9%E5%91%A8%E6%9C%AB%E3%80%8B%E6%96%B0%E5%B9%B4%E7%89%B9%E5%88%8A%E4%BA%8B%E4%BB%B6]<br>
+> 后记：(2013年《南方周末》新年特刊事件)[https://zh.wikipedia.org/wiki/2013%E5%B9%B4%E3%80%8A%E5%8D%97%E6%96%B9%E5%91%A8%E6%9C%AB%E3%80%8B%E6%96%B0%E5%B9%B4%E7%89%B9%E5%88%8A%E4%BA%8B%E4%BB%B6]<br>
 > **2013年《南方周末》新年特刊事件**（也称**新年献词事件**）是指《[南方周末](https://zh.wikipedia.org/wiki/南方周末)》工作人员称其因迫于[中共广东省委](https://zh.wikipedia.org/wiki/中共广东省委)宣传部新闻处的压力，未经过该刊正常出版流程[[1]](https://zh.wikipedia.org/wiki/2013年《南方周末》新年特刊事件#cite_note-1)，对2013新年特刊中的新年致辞及相关内容进行大幅删改，并产生数个常识性错误[[2]](https://zh.wikipedia.org/wiki/2013年《南方周末》新年特刊事件#cite_note-错误-2)[[3]](https://zh.wikipedia.org/wiki/2013年《南方周末》新年特刊事件#cite_note-视频-3)，引发《南方周末》采编人员抗议的事件。事件引发全球媒体及社交网站如[推特](https://zh.wikipedia.org/wiki/推特)、[新浪微博](https://zh.wikipedia.org/wiki/新浪微博)用户的广泛关注，主要焦点集中在中华人民共和国内地的[审查制度](https://zh.wikipedia.org/wiki/中华人民共和国出版物审查制度)及[新闻自由](https://zh.wikipedia.org/wiki/中华人民共和国新闻自由)。
 
 
