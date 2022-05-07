@@ -6,13 +6,13 @@ favicon: /images/favicon.ico
 avatar: /img/avatar.jpg
 url: https://littleneko.cf
 description: 星火，日月，流年
-cdn: http://rawcdn-git.littleneko.cf/
+cdn: https://jihulab.com/spss/cdn/-/raw/master
 pjax: 1
 # 1开启
 mathjax: 1
 
 notice: hexo Blog Debugging!
-lazyloadImg: http://rawcdn-git.littleneko.cf/img/loader/orange.progress-bar-stripe-loader.svg
+lazyloadImg: https://jihulab.com/spss/cdn/-/raw/master/img/loader/orange.progress-bar-stripe-loader.svg
 
 menus:
   首页: { path: /, fa: fa-fort-awesome faa-shake }
