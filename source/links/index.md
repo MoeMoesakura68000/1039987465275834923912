@@ -28,7 +28,7 @@ links:
       name: DogCraft
       desc: 
     - url: https://chanshiyu.com/
-      img: https://cdn.jsdelivr.net/gh/chanshiyucx/yoi/blog/avatar.jpg
+      img: https://gcore.jsdelivr.net/gh/chanshiyucx/yoi/blog/avatar.jpg
       name: 蝉时雨
       desc: 蝉鸣如雨，花宵道中
     - url: https://nekohuan.cyou/
