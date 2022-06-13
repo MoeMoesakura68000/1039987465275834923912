@@ -4,7 +4,7 @@ date: 2018-12-12 22:14:36
 keywords: 关于
 description: 
 comments: false
-photos: https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn/raw/master/img/banner/about.jpg
+photos: https://jihulab.com/spss/cdn/-/raw/master/img/banner/about.jpg
 ---
 
 # Nekoha Shizuku Official

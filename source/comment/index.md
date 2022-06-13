@@ -4,7 +4,7 @@ date: 2018-12-20 23:13:48
 keywords: 留言板
 description: 
 comments: true
-photos: https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn/raw/master/img/banner/comment.jpg
+photos: https://jihulab.com/spss/cdn/-/raw/master/img/banner/comment.jpg
 ---
 {% raw %}
 <div class="entry-content">

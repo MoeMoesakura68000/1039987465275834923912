@@ -1,6 +1,6 @@
 avatar: https://imgcdn-git.littleneko.cf/IMG_20210226_221158.jpg # 网站 Logo
 background: # 既是博客的背景，又是文章默认头图
-  path: https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn/raw/master/1.jpg
+  path: https://jihulab.com/spss/cdn/-/raw/master/1.jpg
   width: 395
   height: 600
 favicon:

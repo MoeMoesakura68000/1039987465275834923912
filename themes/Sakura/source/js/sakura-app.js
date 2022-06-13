@@ -170,13 +170,13 @@ function imgError (ele, type) {
   switch (type) {
     case 1:
       if (ele.src.includes('https://cn.gravatar.com/avatar')) {
-        ele.src = ele.src.replace('https://cn.gravatar.com/avatar/', 'https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn/raw/master/img/other/gravatar.jpg')
+        ele.src = ele.src.replace('https://cn.gravatar.com/avatar/', 'https://jihulab.com/spss/cdn/-/raw/master/img/other/gravatar.jpg')
       } else {
-        ele.src = 'https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn/raw/master/img/other/default_avatar.jpg'
+        ele.src = 'https://jihulab.com/spss/cdn/-/raw/master/img/other/default_avatar.jpg'
       }
       break
     case 2:
-      ele.src = 'https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn/raw/master/img/other/default_gavatar.jpg'
+      ele.src = 'https://jihulab.com/spss/cdn/-/raw/master/img/other/default_gavatar.jpg'
       break
     case 3:
 
@@ -432,7 +432,7 @@ function checkBgImgCookie () {
     $('#banner_wave_2').addClass('banner_wave_hide_fit_skin')
   }
   if (bgurl != '') {
-    if (bgurl == 'https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn/raw/master/img/themebg/sakura.png' || bgurl == 'https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn/img/themebg/plaid.jpg' || bgurl == 'https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn/raw/master/img/themebg/star.png' || bgurl == 'https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn/raw/master/img/themebg/point.png' || bgurl == 'https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn/raw/master/img/themebg/little-monster.png') {
+    if (bgurl == 'https://jihulab.com/spss/cdn/-/raw/master/img/themebg/sakura.png' || bgurl == 'https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn/img/themebg/plaid.jpg' || bgurl == 'https://jihulab.com/spss/cdn/-/raw/master/img/themebg/star.png' || bgurl == 'https://jihulab.com/spss/cdn/-/raw/master/img/themebg/point.png' || bgurl == 'https://jihulab.com/spss/cdn/-/raw/master/img/themebg/little-monster.png') {
       mashiro_global.variables.skinSecter = true
       mashiro_global.variables.isNight = false
       $('#night-mode-cover').css('visibility', 'hidden')
@@ -499,11 +499,11 @@ $(document).ready(function () {
       setCookie('bgImgSetting', url, 30)
     })
   }
-  changeBG('#sakura-bg', 'https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn/raw/master/img/themebg/sakura.png')
-  changeBG('#gribs-bg', 'https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn/raw/master/img/themebg/plaid.jpg')
-  changeBG('#pixiv-bg', 'https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn/raw/master/img/themebg/star.png')
-  changeBG('#KAdots-bg', 'https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn/raw/master/img/themebg/point.png')
-  changeBG('#totem-bg', 'https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn/raw/master/img/themebg/little-monster.png')
+  changeBG('#sakura-bg', 'https://jihulab.com/spss/cdn/-/raw/master/img/themebg/sakura.png')
+  changeBG('#gribs-bg', 'https://jihulab.com/spss/cdn/-/raw/master/img/themebg/plaid.jpg')
+  changeBG('#pixiv-bg', 'https://jihulab.com/spss/cdn/-/raw/master/img/themebg/star.png')
+  changeBG('#KAdots-bg', 'https://jihulab.com/spss/cdn/-/raw/master/img/themebg/point.png')
+  changeBG('#totem-bg', 'https://jihulab.com/spss/cdn/-/raw/master/img/themebg/little-monster.png')
   changeBGnoTrans('#bing-bg', 'https://api.shino.cc/bing/')
   $('.skin-menu #white-bg').click(function () {
     mashiro_global.variables.skinSecter = false
@@ -521,7 +521,7 @@ $(document).ready(function () {
   $('.skin-menu #dark-bg').click(function () {
     mashiro_global.variables.skinSecter = true
     mashiro_global.variables.isNight = true
-    $('body').css('background-image', 'url(https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn/raw/master/img/other/starry_sky.png)')
+    $('body').css('background-image', 'url(https://jihulab.com/spss/cdn/-/raw/master/img/other/starry_sky.png)')
     $('.blank').css('background-color', 'rgba(255,255,255,.8)')
     $('#night-mode-cover').css('visibility', 'visible')
     $('.pattern-center').removeClass('pattern-center').addClass('pattern-center-sakura')
