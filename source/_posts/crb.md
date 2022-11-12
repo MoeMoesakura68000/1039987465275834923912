@@ -5,8 +5,6 @@ tags: [internet]
 ---
 
 
-# chromebook初体验与解决问题
-
 在TG某二手频道捡了一台Dell Chromebook
 
 配置（总之就是能用而已）：Celeron N2030,4G DDR3,16G EMMC 5.1(没内置硬盘)
