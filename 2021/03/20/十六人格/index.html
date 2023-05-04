@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  
+  <title itemprop="name">十六人格入门 | さくら荘その貓貓樂園</title>
+ <meta name="keywords" content="%= config.title %">
+    <meta name="description" content="%= config.title %">
+  
+    <link rel="shortcut icon" href="/images/favicon.ico">
+  
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC" media="all">
+  <link rel="dns-prefetch" href="//gcore.jsdelivr.net">
+  <link rel="stylesheet" id="saukra_css-css" href="/css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/css/lib.min.css" media="all">
+  <link rel="stylesheet" href="/css/font.css" media="all">
+  <link rel="stylesheet" href="/css/insight.css" media="all">
+  <link rel="stylesheet" href="/css/jquery.fancybox.min.css" media="all">
+  <link rel="stylesheet" href="/css/zoom.css" media="all">
+  <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+  <link rel="stylesheet" href="/css/vendor.css">
+<!--   <link rel="stylesheet" id="saukra_css-css" href="https://2heng.xin/wp-content/cache/autoptimize/css/autoptimize_ad42a61f4c7d4bdd9f91afcff6b5dda5.css
+" type="text/css" media="all"> -->
+  <script>
+  /*Initial Variables*/
+  var mashiro_option = new Object();
+  var mashiro_global = new Object();
+  mashiro_option.NProgressON = true;
+  /*
+   * 邮箱信息之类的东西可以填在这里，这些js变量基本都作用于sakura-app.js
+   * 这样的设置仅是为了方便在基于PHP开发的主题中设置js变量，既然移植到了Node上，我想或许可以精简这一逻辑吧
+   */
+
+  mashiro_option.site_name = "さくら荘その貓貓樂園";
+  mashiro_option.author_name = "";
+  mashiro_option.site_url = "https://littleneko.cf";
+  mashiro_option.v_appId = "GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz";
+  mashiro_option.v_appKey = "mgOpfzbkHYqU92CV4IDlAUHQ";
+  mashiro_option.mathjax = "1";
+
+  // mashiro_option.jsdelivr_css_src = "https://gcore.jsdelivr.net/gh/moezx/cdn@3.4.5/css/lib.min.css";
+  // mashiro_option.float_player_on = true;
+
+  /*End of Initial Variables*/
+  </script>
+  <script type="text/javascript">
+  var bg = "https://img.2eka.cloud/api/random?type=pc".split(",");
+  var bgindex = Math.floor(Math.random()*bg.length);
+  if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
+    alert('朋友，IE浏览器未适配哦~');
+  }
+  </script>
+  <style type="text/css">
+  .hljs-ln{border-collapse:collapse}.hljs-ln td{padding:0}.hljs-ln-n:before{content:attr(data-line-number)}
+  </style>
+  <style type="text/css">.site-top .lower nav{display:block !important;}.author-profile i,.post-like a,.post-share .show-share,.sub-text,.we-info a,span.sitename,.post-more i:hover,#pagination a:hover,.post-content a:hover,.float-content i:hover{color:#FE9600}.feature i,.download,.navigator i:hover,.links ul li:before,.ar-time i,span.ar-circle,.object,.comment .comment-reply-link,.siren-checkbox-radio:checked + .siren-checkbox-radioInput:after{background:#FE9600}::-webkit-scrollbar-thumb{background:#FE9600}.download,.navigator i:hover,.link-title,.links ul li:hover,#pagination a:hover,.comment-respond input[type='submit']:hover{border-color:#FE9600}.entry-content a:hover,.site-info a:hover,.comment h4 a,#comments-navi a.prev,#comments-navi a.next,.comment h4 a:hover,.site-top ul li a:hover,.entry-title a:hover,#archives-temp h3,span.page-numbers.current,.sorry li a:hover,.site-title a:hover,i.iconfont.js-toggle-search.iconsearch:hover,.comment-respond input[type='submit']:hover{color:#FE9600}.comments .comments-main{display:block !important;}.comments .comments-hidden{display:none !important;}background-position:center center;background-attachment:inherit;}
+  </style>
+</head>
+</html>
+<body class="page-template page-template-user page-template-page-analytics page-template-userpage-analytics-php page page-id-1297 chinese-font serif isWebKit">
+  <div class="scrollbar" id="bar">
+  </div>
+  <a href="#" class="cd-top faa-float animated"></a>
+  <section id="main-container">
+    <div class="headertop filter-grid">
+  <div id="banner_wave_1"></div>
+  <div id="banner_wave_2"></div>
+  <figure id="centerbg" class="centerbg">
+    <div class="focusinfo no-select">
+      <div class="header-tou">
+        <a href="https://littleneko.cf">
+          <img src="https://jihulab.com/spss/cdn/-/raw/master/img/avatar.jpg">
+        </a>
+      </div>
+      <div class="header-info">
+        <p>星火，日月，流年</p>
+        <div class="top-social_v2">
+          <li id="bg-pre">
+            <img class="flipx" src="https://jihulab.com/spss/cdn/-/raw/master/img/other/next-b.svg">
+          </li>
+          
+            
+              
+                <li>
+                  <a href="https://github.com/Nekoha-Shizuku" target="_blank" class="social-github" title="github">
+                    <img src="https://jihulab.com/spss/cdn/-/raw/master/img/social/github.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://t.me/momoesakura" target="_blank" class="social-github" title="telegram">
+                    <img src="https://jihulab.com/spss/cdn/-/raw/master/img/social/telegram.svg">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="mailto:moenachoneko2020@protonmail.com" target="_blank" class="social-github" title="email">
+                    <img src="https://jihulab.com/spss/cdn/-/raw/master/img/social/email.svg">
+                  </a>
+                </li>
+              
+            
+          
+          <li id="bg-next">
+            <img src="https://jihulab.com/spss/cdn/-/raw/master/img/other/next-b.svg">
+          </li>
+        </div>
+      </div>
+    </div>
+  </figure>
+  <div id="video-container" style="">
+    <video style="object-fit: fill" id="bgvideo" class="video" video-name="" src="" width="auto" preload="auto">
+    </video>
+    <div id="video-btn" class="loadvideo videolive">
+    </div>
+    <div id="video-add">
+    </div>
+    <div class="video-stu">
+    </div>
+  </div>
+  <div class="headertop-down faa-float animated" onclick="headertop_down()">
+    <span>
+      <i class="fa fa-chevron-down" aria-hidden="true">
+      </i>
+    </span>
+  </div>
+</div>
+
+    <div id="page" class="site wrapper">
+      <header class="site-header no-select gizle sabit" role="banner">
+  <div class="site-top">
+    <div class="site-branding">
+      <span class="site-title">
+        <span class="logolink moe-mashiro">
+          <a href="/">
+            <span class="sakurasono">さくら荘その貓貓樂園</span>
+            <span class="shironeko"></span>
+          </a>
+        </span>
+      </span>
+    </div>
+    <div class="searchbox search-form-submit">
+      <i class="iconfont js-toggle-search iconsearch icon-search">
+      </i>
+    </div>
+    <div id="show-nav" class="showNav mobile-fit">
+      <div class="line line1">
+      </div>
+      <div class="line line2">
+      </div>
+      <div class="line line3">
+      </div>
+    </div>
+    <div class="lower-cantiner">
+      <div class="lower">
+        <nav class="mobile-fit-control hide">
+          <ul id="menu-new" class="menu">
+            
+              <li>
+                <a href="/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-fort-awesome faa-shake" aria-hidden="true"></i>
+                    首页
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/archives">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-archive faa-shake" aria-hidden="true"></i>
+                    归档
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/categories/技术/">
+                          <i class="fa fa-code" aria-hidden="true"></i>
+                          技术
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/生活/">
+                          <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                          生活
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/资源/">
+                          <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                          资源
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/随想/">
+                          <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                          随想
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/转载/">
+                          <i class="fa fa-book" aria-hidden="true"></i>
+                          转载
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="javascript:;">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-list-ul faa-vertical" aria-hidden="true"></i>
+                    清单
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/music/">
+                          <i class="fa fa-headphones" aria-hidden="true"></i>
+                          歌单
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="/links/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-link faa-shake" aria-hidden="true"></i>
+                    友人帐
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/donate/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-heart faa-pulse" aria-hidden="true"></i>
+                    赞赏
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
+                    关于
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/about/">
+                          <i class="fa fa-meetup" aria-hidden="true"></i>
+                          我？
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/theme-sakura/">
+                          <i class="fa iconfont icon-sakura" aria-hidden="true"></i>
+                          主题
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="/atom.xml">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-rss faa-pulse" aria-hidden="true"></i>
+                    RSS
+                  </span>
+                </a>
+                
+              </li>
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+      
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+<div class="pattern-center-blank"></div>
+
+<div id="content" class="site-content">
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+          <header class="entry-header">
+            <h1 class="entry-title">十六人格入门</h1>
+            <p class="entry-census">&nbsp;·&nbsp;2021-3-20&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p></p>
+
+            <hr>
+          </header>
+        
+        <div class="entry-content">
+          <p>Es 类型 数量最多最普遍的大类 外向 注重现实世界</p>
+<p>ESFJ：可以说是基数最多的一种类型了，这类人格总是非常的热情，比较感性，然后喜欢帮忙，有点爱管教人（生活琐事上） 会习惯性的讨好他人）</p>
+<p>这类人格的优点缺点以及折中特质有：</p>
+<p>优点：热情活泼 善良 友好 温柔 道德感较高 人际关系的高手 亲和 乐于助人 </p>
+<p>缺点：恋爱脑 鸡婆 无脑（别人说什么就是什么没有思想）肤浅 圣母白莲花 嘴碎 </p>
+<p>折中：传统 道德绑架 保守 家庭观念 自来熟 爱八卦 和事佬</p>
+<p>ESFJ的女性是较多的，常见的ESFJ是对着你念叨的妈妈，是街边嘴碎的大妈，是你天天看韩剧偶像综艺的舍友，他们大多打扮比较保守，观念传统，道德感较高，一开始跟他们相处会觉得他们很好相处人很好，但是相处久了基本上会进入被他道德绑架而心累的阶段。总的来说，ESFJ是个万金油，是维持社会稳定的一种存在。</p>
+<p>ESFP：这类人热情自来熟，总是有用不完的精力，他们喜欢通过人与人来感受五感的刺激，大部分道德感都不怎么高，属于喜欢通过某些行为来博取别人的关注，可以说他们天生就是为了表演存在，他们的社会认同感来自于别人对他们的关注</p>
+<p> 这类人格的优点缺点以及折中特质有：</p>
+<p>优点：热情活泼 机灵 能说会道 交际花 胆大 友好 异性缘 </p>
+<p>缺点：道德感较低 肤浅 无脑 懒散 疯癫 缺乏规划</p>
+<p>折中：享乐主义 乐天派 傻白甜 爱表演 爱打扮 </p>
+<p>  ESFP是表演型的乐天派，大多数有点傻白甜，比较懒散没有计划，大部分esfp都是天生的交际高手，共情能力强，口才好。常见的ESFP是你们身边异性缘好的风流人士，是圈子里的交际花，是那个群体里喜欢一惊一乍惹人注意的那个，他们打扮大多数比较时尚或开放，比较享乐主义，眼光不长远，很自来熟见到一个就能说一个。</p>
+<p> ESTJ：是ES里领导能力高的类型，传统，比较大男子主义，控制欲强，喜欢管控别人，性子会有点暴躁，但是自我约束较高。</p>
+<p> 这类人格的优点缺点以及折中特质有：</p>
+<p>优点：自律 领导能力强 目的性强 道德感高 责任感 效率高 </p>
+<p>缺点：控制欲强 暴躁 脾气差 刻板 固执 执着 共情差 </p>
+<p>折中：威严 等级制度 勤奋 上进 循规蹈矩</p>
+<p> ESTJ注重细节，办事有条理，效率高，大多数ESTJ都有大男子主义  比较强势有气场，三观比较传统，较为自律。常见学校大哥大姐，学生的ESTJ大多会参加班级职位和学生会，并会努力当上管理层面，社会中的ESTJ往往很上进，大多都会进入管理层，各方面优秀的ESTJ基本上职业生涯都会当上高管。ESTJ打扮大多较为严谨朴素，不会打扮花哨，如果穿校服和职业装一定是一丝不苟的那种。</p>
+<p>ESTP：也是比较享乐主义的人，机敏灵活，张扬，很圆滑，可以说是中国社会最为适合的一种人格，口才好，吹牛逼的能手，欧美电影里大部分男主都是这种性格，金融界里面xd在违法边缘展翅鹏飞。</p>
+<p> 这类人格的优点缺点以及折中特质有：</p>
+<p>优点：机灵 豁达 口才好 处事圆滑 嗅到商机 勇敢 幽默风趣 </p>
+<p>缺点：可能有暴力倾向，自私，贪婪，目光短浅，最容易沉迷五感（约P XD 酗酒等）</p>
+<p>折中：功利性强 滑头 爱吹牛逼 把妹高手 谈判推销高手</p>
+<p>  ESTP活在当下，为了面子总会吹牛逼，说话风趣，调情高手，道德感比较低，自制力差，ESTP在学校里一般是比较调皮，目无规则，行事张扬，打架，到处欺负女生男生的基本上就是ESTP，社会上ESTP很有可能是风月场所的光顾达人，酒吧迪厅夜店，ESTP也喜欢刺激项目，比如蹦极，事业上ESTP则很可能在金融行业有所作为，所谓的忽悠和赌徒，或者在需要口才的，列如诉讼律师特别是违背道德的案子，也有所成就。</p>
+<p>EN类型：mbti里，可以说s/n是隔着一道鸿沟，es跟en也是从思想上开始发生了显著的变化。</p>
+<p>ENFJ：热心的教育者，内心信念足够强大，喜欢从生活到思想上无微不至的教育着他人，ENFJ热爱人类，可以说这类人是群体中最具有人格魅力的人，是人生指引灯塔般的存在。</p>
+<p> 这类人格的优点缺点以及折中特质有：</p>
+<p>优点：善良 坚定 人格魅力 亲和 循循善诱 人际关系的高手 领导能力 </p>
+<p>缺点：心肠软 理想化 容易过度解读他人情绪 不善独处 </p>
+<p>折中：佛性 和事佬 啰嗦 好为人师 洗脑能力强 对他人理想化 教育家 爱劝说 </p>
+<p>  ENFJ可以说是最菩萨心肠的一种人格，对人类有着至高无上的热爱，他们坚信世界上的人类都是善和美的存在，总是热心的关爱教育着身边的人，同时他们自身的信仰足够坚定，他们可能是你们身边佛性的宗教热爱者，是用大道理劝说你的教授和老师，是引领人们的灯塔般的存在。他们的打扮大多不会太邋遢，打扮上大多会给人一种温和的气质，脸上大多带着友好的表情，前卫和酷哥酷姐不是他们的风格。</p>
+<p> ENFP：静不下来的傻白甜，所有人格里面脑洞最大最活泼的一种，三观就像热血漫主角一样积极向上，嘻嘻哈哈的表面下也有敏感落寞的一面</p>
+<p> 这类人格的优点缺点以及折中特质有：</p>
+<p>优点：热心肠 机敏 浪漫 率性 活泼 天真 包容</p>
+<p>缺点：神经大条 敏感  拎不清 缺乏计划 组织性差 理想化 懒散 情绪化</p>
+<p>折中：纯真 三分钟热度 脑洞大 精力旺盛 贪玩 </p>
+<p>  如果说ENFJ是耶稣一样的存在，那么ENFP就是身边的小太阳，温暖人心，天真浪漫的他们总能让你感到快乐，内心总会有无数的想法。ENFP往往是身边脑洞大 古灵鬼怪  为人友善的人，他们没有什么势利眼，也不懂盘算利益，脑子很直，爱恨分明。他们打扮基本上都有自己的审美，可以明显的感觉到他们的个性和品味，他们最讨厌的就是拘束。</p>
+<p> ENTP：能言善辩的辩论家，关于逻辑智慧的脑洞大到让人惊奇，创造家，想象力和执行力的结合 喜欢挑战传统权威 </p>
+<p>这类人格的优点缺点以及折中特质有：</p>
+<p>优点：能言善辩 逻辑高手 创意 活泼 灵活 </p>
+<p>缺点：缺乏耐心 三分钟热度 拖延症 叛逆 唠叨 </p>
+<p>折中：随性 较真 特立独行 诡辩</p>
+<p>  ENTP是脑洞很大的人，并且点子也很多，总会提出一些别人想不到的问题然后去付诸行动证实他的可行性，为人放荡不羁，学生时代大多是喜欢像老师提出类似较真的问题，工作上则是很有创意的人，这类人打扮上往往不会太拘束，是那种穿衬衫露一颗扣子卷个袖子的人，但是保持着一定社交的他们一定不会让自己看上去太邋遢。</p>
+<p> ENTJ：天生的领导者，让身边的人感到气场强大，一边教育你一边领导你，目光长远还执行力强，最适合当一个团体里元帅的存在。</p>
+<p> 这类人格的优点缺点以及折中特质有：</p>
+<p>优点：领导力 执行力 决策力 双商在线</p>
+<p>缺点：不近人情 冷血 控制欲强 耐心 不择手段 </p>
+<p>折中：功利性强 注重结果忽略过程 洗脑 偏执</p>
+<p>  ENTJ是天生的领导者征服者，富有雄略，甚至为了目的不择手段，但是领导风格上，他们往往比较开明，因才施用。ENTJ行事雷厉风行，霸道偏执，身边的人很难跟上他们的节奏。生活上，他们往往是让你感到等级威严的上司领导，做事冷酷效率高，私底下接触也是半命令的口吻在教育你。从打扮上，entj不会选择太过花里胡巧的装扮，大多数都比较成熟稳重。</p>
+<p>IS类型：人口数量多，性情内敛文静，认真执着</p>
+<p>ISFJ：比较温柔贤良，知心大姐姐，邻居大姐姐，这类人可以说是所有人格里最温柔的一种了。</p>
+<p> 这类人格的优点缺点以及折中特质有：</p>
+<p>优点：温柔 知心 贤惠 友善 严谨 勤奋 </p>
+<p>缺点：敏感 妄自菲薄 没主见 目光短浅</p>
+<p>折中：谨慎  传统 踏实 责任感过强</p>
+<p> ISFJ乐于助人，心思细腻  善于照顾他人情绪，善解人意的小天使说的就是他们。ISFJ们大多顾家，擅长照顾人，贴心。他们往往是身边文静温柔的女生，男生则是比较内向的暖男，他们往往在群体里充当解语者的角色，工作和学习上往往是认真服从安排，兢兢业业的那个。ISFJ打扮大多比较保守但是又不会过于拘谨，女性大多喜欢长裙，男性未知。</p>
+<p>ISFP：优柔寡断的艺术家，心思敏感，性格柔软，对艺术方面的悟性很高，常常能发现身边美好的东西</p>
+<p>这类人格的优点缺点以及折中特质有：</p>
+<p>优点：亲和力 创造力 善良 正直 艺术天赋</p>
+<p>缺点：优柔寡断 情绪化 敏感 悲观 没主见 </p>
+<p>折中：多愁善感 闷骚 拖延症 玻璃心 缺乏安全感</p>
+<p>  ISFP喜欢通过内心的想法去感受这个世界，整个世界因为他们的内心而变得不一样。大部分ISFP都比较内敛，说话声音小，动作幅度小，有时候总会说出一些悲观主义的话。在生活中她们往往更愿意当服从者而不是领导者，相比ISFJ ISFP更缺少行动力，往往比较懒散变成拖延症。从打扮上，ISFP更个性艺术，汉服 LOLITA  JK是很多ISFP的小圈爱好，男性则邋遢，时尚都有可能，ISFP打扮新潮，不会选择太过传统正式的服装。</p>
+<p>ISTJ：踏实严谨的工蜂，他们能很好的完成属于自己的任务，为人冷静靠谱，是一个安静的倾听者 社会上不可缺少的一员。</p>
+<p>这类人格的优点缺点以及折中特质有：</p>
+<p>优点：冷静 严谨 沉着 条理 规划 执行力 忠诚 </p>
+<p>缺点：木讷 固执 死板 创新思维低 反应迟钝 交际能力低</p>
+<p>折中：简朴 严肃 缺乏长远目光 自尊心较强 </p>
+<p>  ISTJ很传统，墨守成规，基本上社会上的规则他们都会严格执行，同时他们也是很会规划的人，特别是把钱浪费在不必要的事情上。他们表现出来会比较冷漠，不好相处，谈话中往往是倾听者，对话题反应会比较迟钝，不喜欢交谈。Istj学生时代基本上是老师喜欢的好孩子，工作上是一丝不苟完成任务的下属。从打扮上ISTJ比较传统朴素，不会穿很新潮的东西，大部分ISTJ的审美能力也比较差，他们打扮往往是最精简的。</p>
+<p>ISTP：灵巧的手艺者，注重内心世界的思考，思维敏捷。同时对外界的感觉敏锐，运动神经发达，注重利益，手段灵活。</p>
+<p>这类人格的优点缺点以及折中特质有：</p>
+<p>优点：敏捷 动手能力强 观察力 冷静 缜密 </p>
+<p>缺点：犹豫 讨厌概念 执行力差 道德感低 </p>
+<p>折中：不喜欢事先准备 缺乏上进心 利己主义 势利</p>
+<p> ISTP比较灵活 手跟得上脑子，内心比较利己主义，可能会藐视规则。喜欢思考的他们，反应神经也灵敏，对外界细节敏感，往往再刑侦 体育 电子竞技  计算机  手艺等有出色成就。表面上ISTP往往比较冷淡，相处起来能发现内心的想法。从打扮上，他们各式各样，但是大部分打扮上都比较朴素，不会太过张扬，就是懒得打扮而已。</p>
+<p>IN类：最注重内心精神世界的类型</p>
+<p>INFJ：神秘的算卦神婆，温柔又有才情，感觉他们天生就适合站在雪景里嗅梅花，对异性有着致命的吸引力。</p>
+<p> 这类人格的优点缺点以及折中特质有：</p>
+<p>优点：温柔 读心 共情能力强 仁爱 道德感高</p>
+<p>缺点：虚伪 天然黑 腹黑 毒舌 多面人格 </p>
+<p>折中：洗脑能力 若即若离 神秘 热爱神学玄学</p>
+<p>  INFJ表面都很仁爱友好看着像isfj，但是会有天然黑毒舌的一面，一旦他们毒舌起来，基本上是一击必倒。他们大多喜欢神学玄学，看着神秘，对人若即若离，天生的情感高手，面对不同的人会有不同的人格面具，内心热爱人类，道德感较高。生活上他们都比较温柔，会关照人也会照顾别人的情绪，但是会性格好到你有点看不透他们，偶尔展现出毒舌的一面。外表上，他们打扮大多比较文艺，女性会有小众爱好lolita jk制服 日系 森系，男生会打扮比较暖男，infj打扮基本上都不会太土。</p>
+<p>INFP：天真软萌的性情，情绪多变热衷于在自己的小世界里思考，但是也会有脆弱敏感的一面，是最理想主义的类型，也是自杀率最高的一种类型。</p>
+<p>这类人格的优点缺点以及折中特质有：</p>
+<p>优点：道德感高 共情能力强 天真 率性 友好 专一 </p>
+<p>缺点：敏感，情绪化 自我 执行力差 优柔寡断 </p>
+<p>折中：理想主义 浪漫主义 软萌 喜欢作 </p>
+<p> INFP看着天真软萌，会有点小戏精一样的可爱，对待人友好善良，比较理想主义，很纯真。很情绪化，泪点很低  笑点很低，对待人的情绪很敏感，自制力比较差，总会陷入纠结的情绪，喜欢沉浸再自己的小世界里。INFP在生活里表现得比较慢熟  天真软萌，会思考一些很理想主义的道理，通常在艺术和哲学上无师自通。打扮上他们比较可爱，日系  小裙子等，但是也有比较邋遢的那种，但是大部分INFP对美的追求还挺高的。</p>
+<p>INTJ：计划狂魔完美主义者，实用主义，最有长远战略眼光的人格，自主独立思考深刻，为人比较冷漠，但是专一忠诚</p>
+<p> 这类人格的优点缺点以及折中特质有：</p>
+<p>优点：目光长远 聪慧 专一 执行力强 计划 思想深刻</p>
+<p>缺点：自大 固执 毒舌 控制欲强 腹黑 冷漠 无情 不善交际</p>
+<p>折中：理性 自恋 完美主义 偏执 包容性差</p>
+<p>INTJ看着比较高冷，但是跟他们谈起有兴趣的东西他们会很流利的交流起来，他们喜欢辩论，交流自己研究的东西，而且这个交流过程像洗脑。对人很慢热，对身边傻逼的容忍度几乎为零，耐心很差。生活中的INTJ出现在图书馆书城电影院，要不就是XX交流会或者工作地点，有座位的咖啡奶茶甜品店，极为讨厌需要运动的活动如爬山。打扮上，INTJ大多比较正式，出门绝不会穿着邋遢，会偏好有气场的衣服，如全身黑。</p>
+<p>INTP：聪慧的学者，天生的逻辑学家，严谨中透露着一丝呆萌。 </p>
+<p> 这类人格的优点缺点以及折中特质有：</p>
+<p>优点：逻辑强 思维活跃 思考能力强 聪慧 冷静</p>
+<p>缺点：计划性差 没头没尾 三分钟热度 懒散 拖延症 不善交际</p>
+<p>折中：佛性 淡然 理性 宅 </p>
+<p>INTP看着比较呆，但是辩论起来就完全是逻辑海洋式的攻击，对数据的执着和逻辑很执着，intp看着比较好相处，但是内心比较冷漠，因为他们只在意他们脑内想的一些东西和研究的东西，看着虽然佛，好相处，但是内心比较疏离。INTP一般喜欢呆在家里，除非上班上学，或者跟他们认为的同类人出去，INTP讨厌运动。房间一般都很乱，不喜欢计划也不喜欢整理，没有时间观念，然后还很懒。打扮上，INTP会比较随心所欲，偏好性冷淡风格极简风格，他们大多对外表没有什么追求。</p>
+
+        </div>
+        <!-- .entry-content -->
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+        </footer><!-- .entry-footer -->
+      </article>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+          
+            <div class="post-nepre half previous">
+          
+            <a href="/2021/07/01/Clash配置基础/" rel="prev">
+              <div class="background">
+                <img class="lazyload" src="https://jihulab.com/spss/cdn/-/raw/master/img/loader/orange.progress-bar-stripe-loader.svg" data-src="" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="">
+              </div>
+              <span class="label">
+              Previous Post</span>
+              <div class="info">
+                <h3>
+                Clash配置文件·基础篇</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+        
+          
+            <div class="post-nepre half next">
+          
+            <a href="/2021/03/17/note-on-ssh/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://jihulab.com/spss/cdn/-/raw/master/img/loader/orange.progress-bar-stripe-loader.svg" data-src="" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                SSH 使用小记</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
+      
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="" class="profile gravatar"><img src="" itemprop="image" alt="" height="70" width="70"></a>
+          <div class="meta">
+            <span class="title">Author</span>
+            <h3 itemprop="name">
+            <a href="" itemprop="url" rel="author"></a>
+            </h3>
+          </div>
+        </div>
+        <hr>
+        <p><i class="iconfont icon-write"></i></p>
+      </section>
+    </main><!-- #main -->
+  </div><!-- #primary -->
+</div>
+
+
+
+    </div>    
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="请输入关键词..."/>
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            // PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+    <!-- <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2023 Nekoha Shizuku<br>
+      powered_by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer> -->
+<footer id="colophon" class="site-footer" role="contentinfo">
+  <div class="site-info">
+    <div class="footertext">
+      <div class="img-preload">
+        <img src="https://jihulab.com/spss/cdn/-/raw/master/img/other/wordpress-rotating-ball-o.svg">
+        <img src="https://jihulab.com/spss/cdn/-/raw/master/img/other/disqus-preloader.svg">
+      </div>
+      
+    </div>
+    <div class="footer-device">
+    <p style="font-family: 'Ubuntu', sans-serif;">
+        <span style="color: #b9b9b9;">本站由Hexo原力驱动，托管于GitHub Pages.<br>All Right Reserved. <br>&copy 2022 Nekoha Shizuku Official  <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i></a>
+        </span>
+      </p>
+    </div>
+  </div><!-- .site-info -->
+</footer>
+
+
+
+<!-- <script src="/js/tocbot.js"></script> -->
+<script type="text/javascript" src="/js/lib.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+<script type="text/javascript" src="/js/InsightSearch.js"></script>
+<script type="text/javascript" src="/js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="/js/zoom.min.js"></script>
+<script type="text/javascript" src="/js/sakura-app.js"></script>
+<script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='https://cdn.bootcdn.net/ajax/libs/valine/1.3.4/Valine.min.js'></script>
+<script src="/js/botui.js"></script>
+<script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-203124212-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-203124212-1');
+</script>
+<script>console.log("Hello World!")</script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script> -->
+<script type="text/javascript">
+/* <![CDATA[ */
+if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+  var Poi = {"pjax":"1","movies":{"url": "https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn0101/raw/master/","name":"109819229-1-208.mp4","live":"close"},"windowheight":"fixed","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+} else {
+  var Poi = {"pjax":"1","movies":{"url": "https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn0101/raw/master/","name":"109819229-1-208.mp4","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+}
+/* ]]> */
+
+</script>
+<script>
+$(document).ready(function() {
+  if ($(".toc").length > 0 && document.body.clientWidth > 1200) {
+    if ($(".pattern-center").length > 0) { //有图的情况
+      tocbot.init({
+          // Where to render the table of contents.
+          tocSelector: '.toc', // 放置目录的容器
+          // Where to grab the headings to build the table of contents.
+          contentSelector: '.entry-content', // 正文内容所在
+          // Which headings to grab inside of the contentSelector element.
+          scrollSmooth: true,
+          headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+          headingsOffset: -400,
+          scrollSmoothOffset: -85
+      });
+    } else {
+      tocbot.init({
+          // Where to render the table of contents.
+          tocSelector: '.toc', // 放置目录的容器
+          // Where to grab the headings to build the table of contents.
+          contentSelector: '.entry-content', // 正文内容所在
+          // Which headings to grab inside of the contentSelector element.
+          scrollSmooth: true,
+          headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+          headingsOffset: -85,
+          scrollSmoothOffset: -85
+      });
+    }
+    var offsetTop = $('.toc').offset().top - 95;
+    window.onscroll = function() {
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+      if (scrollTop >= offsetTop) {
+        $('.toc').addClass('toc-fixed');
+      } else {
+        $('.toc').removeClass('toc-fixed');
+      }
+    }
+  }
+});
+</script>
+
+    <div class="openNav no-select" style="height: 50px;">
+      <div class="iconflat no-select" style="width: 50px; height: 50px;">
+        <div class="icon"></div>
+      </div>
+      <div class="site-branding search-form-submit">
+        <i class="iconfont js-toggle-search iconsearch icon-search"></i>
+      </div>
+    </div>
+  </section>
+  <div id="mo-nav" class="">
+  <div class="m-avatar">
+    <img src="https://jihulab.com/spss/cdn/-/raw/master/img/avatar.jpg">
+  </div>
+  <p style="text-align: center; color: #333; font-weight: 900; font-family: 'Ubuntu', sans-serif; letter-spacing: 1.5px">さくら荘その貓貓樂園</p>
+  <p style="text-align: center; word-spacing: 20px;">
+    
+  </p>
+  <ul id="menu-new-1" class="menu">
+    
+      <li>
+        <a href="/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-fort-awesome faa-shake" aria-hidden="true"></i>
+            首页
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/archives">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-archive faa-shake" aria-hidden="true"></i>
+            归档
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/categories/技术/">
+                  <i class="fa fa-code" aria-hidden="true"></i>
+                  技术
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/生活/">
+                  <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                  生活
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/资源/">
+                  <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                  资源
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/随想/">
+                  <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                  随想
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/转载/">
+                  <i class="fa fa-book" aria-hidden="true"></i>
+                  转载
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="javascript:;">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-list-ul faa-vertical" aria-hidden="true"></i>
+            清单
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/music/">
+                  <i class="fa fa-headphones" aria-hidden="true"></i>
+                  歌单
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="/links/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-link faa-shake" aria-hidden="true"></i>
+            友人帐
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/donate/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-heart faa-pulse" aria-hidden="true"></i>
+            赞赏
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
+            关于
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/about/">
+                  <i class="fa fa-meetup" aria-hidden="true"></i>
+                  我？
+                </a>
+              </li>
+            
+              <li>
+                <a href="/theme-sakura/">
+                  <i class="fa iconfont icon-sakura" aria-hidden="true"></i>
+                  主题
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="/atom.xml">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-rss faa-pulse" aria-hidden="true"></i>
+            RSS
+          </span>
+        </a>
+        
+      </li>
+    
+  </ul>
+  <p style="text-align: center; font-size: 13px; color: #b9b9b9;"><i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i></p>
+</div>
+<button onclick="topFunction()" class="mobile-cd-top" id="moblieGoTop" title="Go to top" style="display: none;"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://gcore.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<style>
+  .aplayer .aplayer-lrc {
+    height: 35px;
+  }
+  .aplayer .aplayer-lrc p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px !important;
+  }
+  .aplayer .aplayer-lrc p.aplayer-lrc-current{
+    color: #FF1493;
+  }
+  .aplayer.aplayer-narrow .aplayer-body{
+    left: -66px !important;
+  }
+  .aplayer.aplayer-fixed .aplayer-lrc {
+    display: none;
+  }
+  .aplayer .aplayer-lrc.aplayer-lrc-hide {
+      display:none !important;
+  }
+  .aplayer.aplayer-fixed .lrc-show {
+    display: block;
+    background: rgba(255, 255, 255, 0.8);
+  }
+</style>
+<meting-js
+
+    id="164521381"
+
+    server="netease"
+
+    type="playlist"
+
+    fixed="true"
+
+    autoplay="false"
+
+    loop="all"
+
+    order="random"
+
+    preload="auto"
+
+    volume="0.7"
+
+    mutex="true"
+
+</meting-js>
+<script>
+  $(function(){
+    $('body').on('click', '.aplayer', function(){
+      if($('.aplayer-button').hasClass('aplayer-play')) {
+        $('.aplayer-lrc').removeClass('lrc-show');
+      } else {
+        $('.aplayer-lrc').addClass('lrc-show');
+      }
+    })
+  });
+</script>
+
+</body>
+</html>

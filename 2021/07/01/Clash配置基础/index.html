@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  
+  <title itemprop="name">Clash配置文件·基础篇 | さくら荘その貓貓樂園</title>
+ <meta name="keywords" content="%= config.title %">
+    <meta name="description" content="%= config.title %">
+  
+    <link rel="shortcut icon" href="/images/favicon.ico">
+  
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC" media="all">
+  <link rel="dns-prefetch" href="//gcore.jsdelivr.net">
+  <link rel="stylesheet" id="saukra_css-css" href="/css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/css/lib.min.css" media="all">
+  <link rel="stylesheet" href="/css/font.css" media="all">
+  <link rel="stylesheet" href="/css/insight.css" media="all">
+  <link rel="stylesheet" href="/css/jquery.fancybox.min.css" media="all">
+  <link rel="stylesheet" href="/css/zoom.css" media="all">
+  <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+  <link rel="stylesheet" href="/css/vendor.css">
+<!--   <link rel="stylesheet" id="saukra_css-css" href="https://2heng.xin/wp-content/cache/autoptimize/css/autoptimize_ad42a61f4c7d4bdd9f91afcff6b5dda5.css
+" type="text/css" media="all"> -->
+  <script>
+  /*Initial Variables*/
+  var mashiro_option = new Object();
+  var mashiro_global = new Object();
+  mashiro_option.NProgressON = true;
+  /*
+   * 邮箱信息之类的东西可以填在这里，这些js变量基本都作用于sakura-app.js
+   * 这样的设置仅是为了方便在基于PHP开发的主题中设置js变量，既然移植到了Node上，我想或许可以精简这一逻辑吧
+   */
+
+  mashiro_option.site_name = "さくら荘その貓貓樂園";
+  mashiro_option.author_name = "";
+  mashiro_option.site_url = "https://littleneko.cf";
+  mashiro_option.v_appId = "GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz";
+  mashiro_option.v_appKey = "mgOpfzbkHYqU92CV4IDlAUHQ";
+  mashiro_option.mathjax = "1";
+
+  // mashiro_option.jsdelivr_css_src = "https://gcore.jsdelivr.net/gh/moezx/cdn@3.4.5/css/lib.min.css";
+  // mashiro_option.float_player_on = true;
+
+  /*End of Initial Variables*/
+  </script>
+  <script type="text/javascript">
+  var bg = "https://img.2eka.cloud/api/random?type=pc".split(",");
+  var bgindex = Math.floor(Math.random()*bg.length);
+  if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
+    alert('朋友，IE浏览器未适配哦~');
+  }
+  </script>
+  <style type="text/css">
+  .hljs-ln{border-collapse:collapse}.hljs-ln td{padding:0}.hljs-ln-n:before{content:attr(data-line-number)}
+  </style>
+  <style type="text/css">.site-top .lower nav{display:block !important;}.author-profile i,.post-like a,.post-share .show-share,.sub-text,.we-info a,span.sitename,.post-more i:hover,#pagination a:hover,.post-content a:hover,.float-content i:hover{color:#FE9600}.feature i,.download,.navigator i:hover,.links ul li:before,.ar-time i,span.ar-circle,.object,.comment .comment-reply-link,.siren-checkbox-radio:checked + .siren-checkbox-radioInput:after{background:#FE9600}::-webkit-scrollbar-thumb{background:#FE9600}.download,.navigator i:hover,.link-title,.links ul li:hover,#pagination a:hover,.comment-respond input[type='submit']:hover{border-color:#FE9600}.entry-content a:hover,.site-info a:hover,.comment h4 a,#comments-navi a.prev,#comments-navi a.next,.comment h4 a:hover,.site-top ul li a:hover,.entry-title a:hover,#archives-temp h3,span.page-numbers.current,.sorry li a:hover,.site-title a:hover,i.iconfont.js-toggle-search.iconsearch:hover,.comment-respond input[type='submit']:hover{color:#FE9600}.comments .comments-main{display:block !important;}.comments .comments-hidden{display:none !important;}background-position:center center;background-attachment:inherit;}
+  </style>
+</head>
+</html>
+<body class="page-template page-template-user page-template-page-analytics page-template-userpage-analytics-php page page-id-1297 chinese-font serif isWebKit">
+  <div class="scrollbar" id="bar">
+  </div>
+  <a href="#" class="cd-top faa-float animated"></a>
+  <section id="main-container">
+    <div class="headertop filter-grid">
+  <div id="banner_wave_1"></div>
+  <div id="banner_wave_2"></div>
+  <figure id="centerbg" class="centerbg">
+    <div class="focusinfo no-select">
+      <div class="header-tou">
+        <a href="https://littleneko.cf">
+          <img src="https://jihulab.com/spss/cdn/-/raw/master/img/avatar.jpg">
+        </a>
+      </div>
+      <div class="header-info">
+        <p>星火，日月，流年</p>
+        <div class="top-social_v2">
+          <li id="bg-pre">
+            <img class="flipx" src="https://jihulab.com/spss/cdn/-/raw/master/img/other/next-b.svg">
+          </li>
+          
+            
+              
+                <li>
+                  <a href="https://github.com/Nekoha-Shizuku" target="_blank" class="social-github" title="github">
+                    <img src="https://jihulab.com/spss/cdn/-/raw/master/img/social/github.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://t.me/momoesakura" target="_blank" class="social-github" title="telegram">
+                    <img src="https://jihulab.com/spss/cdn/-/raw/master/img/social/telegram.svg">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="mailto:moenachoneko2020@protonmail.com" target="_blank" class="social-github" title="email">
+                    <img src="https://jihulab.com/spss/cdn/-/raw/master/img/social/email.svg">
+                  </a>
+                </li>
+              
+            
+          
+          <li id="bg-next">
+            <img src="https://jihulab.com/spss/cdn/-/raw/master/img/other/next-b.svg">
+          </li>
+        </div>
+      </div>
+    </div>
+  </figure>
+  <div id="video-container" style="">
+    <video style="object-fit: fill" id="bgvideo" class="video" video-name="" src="" width="auto" preload="auto">
+    </video>
+    <div id="video-btn" class="loadvideo videolive">
+    </div>
+    <div id="video-add">
+    </div>
+    <div class="video-stu">
+    </div>
+  </div>
+  <div class="headertop-down faa-float animated" onclick="headertop_down()">
+    <span>
+      <i class="fa fa-chevron-down" aria-hidden="true">
+      </i>
+    </span>
+  </div>
+</div>
+
+    <div id="page" class="site wrapper">
+      <header class="site-header no-select gizle sabit" role="banner">
+  <div class="site-top">
+    <div class="site-branding">
+      <span class="site-title">
+        <span class="logolink moe-mashiro">
+          <a href="/">
+            <span class="sakurasono">さくら荘その貓貓樂園</span>
+            <span class="shironeko"></span>
+          </a>
+        </span>
+      </span>
+    </div>
+    <div class="searchbox search-form-submit">
+      <i class="iconfont js-toggle-search iconsearch icon-search">
+      </i>
+    </div>
+    <div id="show-nav" class="showNav mobile-fit">
+      <div class="line line1">
+      </div>
+      <div class="line line2">
+      </div>
+      <div class="line line3">
+      </div>
+    </div>
+    <div class="lower-cantiner">
+      <div class="lower">
+        <nav class="mobile-fit-control hide">
+          <ul id="menu-new" class="menu">
+            
+              <li>
+                <a href="/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-fort-awesome faa-shake" aria-hidden="true"></i>
+                    首页
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/archives">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-archive faa-shake" aria-hidden="true"></i>
+                    归档
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/categories/技术/">
+                          <i class="fa fa-code" aria-hidden="true"></i>
+                          技术
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/生活/">
+                          <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                          生活
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/资源/">
+                          <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                          资源
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/随想/">
+                          <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                          随想
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/转载/">
+                          <i class="fa fa-book" aria-hidden="true"></i>
+                          转载
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="javascript:;">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-list-ul faa-vertical" aria-hidden="true"></i>
+                    清单
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/music/">
+                          <i class="fa fa-headphones" aria-hidden="true"></i>
+                          歌单
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="/links/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-link faa-shake" aria-hidden="true"></i>
+                    友人帐
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/donate/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-heart faa-pulse" aria-hidden="true"></i>
+                    赞赏
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
+                    关于
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/about/">
+                          <i class="fa fa-meetup" aria-hidden="true"></i>
+                          我？
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/theme-sakura/">
+                          <i class="fa iconfont icon-sakura" aria-hidden="true"></i>
+                          主题
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="/atom.xml">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-rss faa-pulse" aria-hidden="true"></i>
+                    RSS
+                  </span>
+                </a>
+                
+              </li>
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+      
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+<div class="pattern-center-blank"></div>
+
+<div id="content" class="site-content">
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+          <header class="entry-header">
+            <h1 class="entry-title">Clash配置文件·基础篇</h1>
+            <p class="entry-census">&nbsp;·&nbsp;2021-7-1&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p></p>
+
+            <hr>
+          </header>
+        
+        <div class="entry-content">
+          <p><em>庆祝Chinese Communist Party 100th Anniversary</em><br><a id="more"></a></p>
+<p>Clash是一个基于规则的跨平台网络代理工具，支持诸如Shadowsocks/V2Ray/Trojan等协议，功能强大，界面美观。</p>
+<p>与传统的网络代理工具不同，Clash需要依赖配置文件（其他软件也得用，所以这话相当于废话）但是Clash不像一般的代理工具，无法在图形化前端上直接配置，不够直观，也就劝退了一堆小白。</p>
+<p>好在，对于机场及付费服务用户来说，只要导入机场提供的订阅Url就完事了；对于自建用户，网络上也有很多“订阅转换”工具，能够满足基本要求。</p>
+<p>然而，如果需要更好的<strong>个性化设置</strong>，那么只能对Clash的配置文件进行处理才能更好的让Clash<strong>“为我所用”</strong>。</p>
+<p>（Q:Clash For Windows没有中文么？A:要不第三方汉化版，要不Google翻译去，总有一款适合你）</p>
+<p>Clash的配置文件基于Yaml格式，也正应此，配置文件可读性很高。</p>
+<p>Yaml有如下优点：</p>
+<ul>
+<li>大小写敏感</li>
+<li>缩进只能使用空格（不能用tab）</li>
+<li>以缩进指示层级关系</li>
+<li>支持注释（因此比json可读性就高了不是一星半点）</li>
+</ul>
+<p>闲话少叙，下面进入正题。</p>
+<p>（Ps:本文使用模板文件来自<a href="https://hijk.pw/clash_template.yaml" target="_blank" rel="noopener">此处</a>)</p>
+<p>Clash配置文件分成多段，</p>
+<p>首先是客户端设置：</p>
+<pre><code class="Yaml">
+port: 7890
+
+socks-port: 7891
+
+allow-lan: false
+
+mode: Rule
+
+log-level: info
+
+external-controller: 127.0.0.1:9090
+
+experimental:
+  ignore-resolve-fail: true 
+</code></pre>
+<p>这是一些基础选项，</p>
+<p>port与socks-port无须多论，就是本地的http及socks5代理端口（</p>
+<p>allow-lan：允许局域网共享，设置成true时发挥作用</p>
+<p>bind-address:当allow-lan设置true时发挥作用，设置”*”时绑定所有ip（包括v4及v6）</p>
+<p>当然也可以单个v4或者v6。</p>
+<p>mode：相当于Shadowrocket（或者桌面版ss/ssr/v2rayn）的模式</p>
+<p>可选rule（按规则放行）/Global（全局走Clash）/Direct（全不走Clash）</p>
+<p>log-level：日志选项</p>
+<p>可选silent（完全不输出日志）/warning（仅warning等级日志）/error（仅error等级日志）/info（正常输出）/debug（调试模式/嘈杂模式，输出最详细）</p>
+<p>external-controller：用不着不管（不是很懂）</p>
+<p>experimental：实验性功能</p>
+<p>ignore-resolve-fail：忽略DNS解析失败（默认开）</p>
+<p>Hosts设置：</p>
+<pre><code class="Yaml">hosts:
+  &#39;mtalk.google.com&#39;: 108.177.125.188
+</code></pre>
+<p>这里支持通配符，但是请注意静态（即完整域名）优先级是高于使用通配符的域名的。</p>
+<p>（即定义了*.example.com又定义了foo.example.com会优先考虑foo.example.com）<br>（神马？不会用Hosts？Pls Google it.）</p>
+<p>然后是DNS设置：</p>
+<pre><code class="Yaml"> dns:
+   enable: true 
+   ipv6: false 
+   listen: 0.0.0.0:53
+
+   enhanced-mode: fake-ip
+   fake-ip-filter: 
+     - &#39;*.lan&#39;
+     - localhost.ptlogin2.qq.com
+     - tplogin.cn
+     - routerlogin.net
+   nameserver:
+     - tls://dns.adguard.com:853 
+     - https://1.1.1.1/dns-query
+   fallback:
+     - tcp://1.1.1.1
+     - tcp://8.8.4.4
+     - tcp://8.8.8.8
+     - tcp://9.9.9.9
+   fallback-filter:
+     geoip: true 
+     ipcidr:
+       - 240.0.0.0/4
+
+</code></pre>
+<p>enhanced-mode设置为fake-ip或者redir-host模式<br>（以下内容来自某段网络资料）</p>
+<p>如果是不使用 Fake-IP 的 redir 情况下，由于操作系统、浏览器或者应用程序中的任何一个缓存了 DNS 解析结果，因此 TCP 连接可以直接根据缓存的解析结果的 IP 建立，代理客户端并没有预先收到对应的 DNS question。在这种情况下，代理客户端有可能直接将这个连接视为和 IP 连接而不是和域名连接，根据域名规则的分流可能就会因此失效，不过根据 IP 分流的规则没有失效。</p>
+<p>如果为了避免域名分流规则失效，你可以设法阻止操作系统或者浏览器缓存 DNS 解析结果，这样每次建立 TCP 连接之前都会发送 DNS question 使代理客户端探测到域名。但是这意味着每次 TCP 连接建立都需要代理客户端进行一次 DNS 解析请求（当然代理客户端可以对 DNS 解析进行缓存避免出现延时激增）。</p>
+<p>Fake-IP 模式下，浏览器、应用程序都是对 Fake IP 发起连接，如果没有代理客户端对连接进行重新封转，那么这部分流量就不能被发往真实的目的 IP，因此所有流量都必须经过代理客户端，而根据端口、设备的分流就需要由代理客户端自己实现。（PS:坏处也是有的，如果Clash崩了你的网就全断了）</p>
+<p>下面的fake-ip-filter：虚假ip过滤器(过滤本地地址)<br>这玩意的用处：比如不处理qq的快速登录（原理：QQ/TIM本地客户端打开服务器与网页交互）（腾讯远端可没这个服务器）或者Tplink路由器的Tplogin.cn，网件路由器的routerlogin.net等。</p>
+<p>nameserver：设置DNS（支持DNS-over-TLS以及DNS-over-HTTPS）</p>
+<p>fallback:当选择全部不可用时，故障恢复。</p>
+<p>然后是Proxies一节（虽然鬼都不会手填）</p>
+<pre><code class="Yaml">proxies:
+
+- name: &quot;ss&quot;
+  type: ss
+  server: server
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: &quot;password&quot;
+  # udp: true
+</code></pre>
+<p>在这里我们手动定义了一个Shadowsocks服务器。</p>
+<p>name:不用说都明白</p>
+<p>type:ss表示是个Shadowsocks服务器。</p>
+<p>以下都很好懂</p>
+<p>udp:是否允许udp连接。</p>
+<p>当然V2Ray 和Trojan也可以</p>
+<pre><code class="Yaml">- name: &quot;v2ray&quot;
+  type: vmess
+  server: server
+  port: 443
+  uuid: a3482e88-686a-4a58-8126-99c9df64b7bf
+  alterId: 64
+  cipher: auto
+  #udp: true
+  tls: true
+  #skip-cert-verify: true
+  network: ws
+  ws-path: /path
+  ws-headers: 
+  Host: v2ray.com 
+
+  # Trojan
+- name: &quot;trojan&quot;
+  type: trojan
+  server: server
+  port: 443
+  password: password
+  # udp: true
+  # sni: example.com # aka server name
+  alpn:
+     - h2
+     - http/1.1
+  # skip-cert-verify: true
+</code></pre>
+<p>(友情提示：请勿打开skip-cert-verify（跳过证书验证）否则会带来严重安全性问题：比如来自GFW的MITM(中间人攻击))</p>
+<p>（不过一般都不会手填，要不然，，）</p>
+<p>接下来是代理组策略：</p>
+<p>可以在此定义切换节点，它与下一节的Rule（策略）都很重要。</p>
+<p>假设你已经在上一节（proxies）定义过了</p>
+<ul>
+<li>HK2</li>
+<li>HK1</li>
+<li>US1</li>
+<li>TW1</li>
+<li>KR1</li>
+</ul>
+<p>这五个节点</p>
+<p>Clash共四种代理方式：分别是自主选择，延迟最低，故障转移，负载均衡</p>
+<p>自主选择：</p>
+<pre><code class="Yaml">proxy-groups:
+
+- name: &quot;自选&quot;
+  type: select
+  proxies:
+    - &quot;HK1&quot;
+    - &quot;HK2&quot;
+    - &quot;US1&quot;
+    - &quot;TW1&quot;
+    - &quot;KR1&quot;
+
+</code></pre>
+<p>name不用多讲</p>
+<p>type为select表示自选，</p>
+<p>proxies以下内容为存在于此组内的节点列表。</p>
+<p>关于自选很简单，比如我们选择了HK1这个节点，那么所有分流到这组的都需要走HK1这个节点。</p>
+<p>延迟最低：</p>
+<pre><code class="Yaml">- name: &quot;LowDelay&quot;
+  type: url-test
+  proxies:
+    - &quot;HK1&quot;
+    - &quot;HK2&quot;
+    - &quot;TW1&quot;
+  url: &#39;http://www.gstatic.com/generate_204&#39;
+  interval: 300
+
+</code></pre>
+<p>type:模式选择</p>
+<p>在这里使用了url-test模式</p>
+<p>（以下内容摘自某Clash文档）</p>
+<p>很多刚接触这类分流软件的用户往往会犯一个<strong>常识性错误</strong>，那就是当他们得知自动选择是<strong>自动选择一个最快的节点</strong>，就很可能认为这个策略组选择的是速度最快的节点，然而显然不是如此。自动选择选出的节点是<strong>批量测延迟过后延迟最低的那个节点</strong>，而非许多人认为的<strong>速度最快的节点</strong>。clash没有内置一个策略组类型以供获取速度最快的节点。<br>根据我的理解，自动选择将选出<strong>组内一个能连的上且延迟最低的节点</strong>，这个节点不一定<strong>速度快</strong>，也不一定<strong>稳定</strong>，但是毫无疑问是这次批量测延迟中<strong>延迟最低</strong>的节点。</p>
+<p>（比如iplc本来是给你打游戏用的，去下Google Drive还拉满速度岂不是多少有点那啥）</p>
+<p>补充：这种低延迟的节点特别适合给Telegram或者Whatsapp用（尤其是语音通话的时候）；或者是游戏用（低延迟硬性要求）</p>
+<p>比如在Telegram/Clubhouse开语音电话的时候延迟太高这语音电话就会非常不稳定（乃至听了半天一句话听不到，无疑是非常致命的）</p>
+<p>其他选项说明：</p>
+<p>interval：间隔时间，单位秒（s）</p>
+<p>tolerance：批量检测完后切换节点所需的延迟差</p>
+<p>比如：</p>
+<p>第一次：</p>
+<table>
+<thead>
+<tr>
+<th>HK1</th>
+<th>HK2</th>
+<th>TW1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>300</td>
+<td>350</td>
+<td>345</td>
+</tr>
+</tbody>
+</table>
+<p>(延迟，单位毫秒（ms），下同)</p>
+<p>过了300秒，第二次检测：</p>
+<table>
+<thead>
+<tr>
+<th>HK1</th>
+<th>HK2</th>
+<th>TW1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>325</td>
+<td>300</td>
+<td>325</td>
+</tr>
+</tbody>
+</table>
+<p>因为 325 - 300 = 25 &lt; 75</p>
+<p>所以不做切换（仍旧保持HK1节点）</p>
+<p>又过了三百秒，第三次：</p>
+<table>
+<thead>
+<tr>
+<th>HK1</th>
+<th>HK2</th>
+<th>TW1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>400</td>
+<td>275</td>
+<td>310</td>
+</tr>
+</tbody>
+</table>
+<p>因为 400 - 275 = 125 &gt; 75</p>
+<p>所以切换至HK2节点。</p>
+<p>故障转移：</p>
+<p>这个模式与自动选择逻辑相近：都用测延迟选择节点，区别在与选择模式；</p>
+<pre><code class="Yaml">
+ - name: &quot;Fallback&quot;
+   type: fallback
+   proxies:
+     - &quot;HK1&quot;
+     - &quot;TW1&quot;
+     - &quot;HK2&quot;
+   url: &#39;http://www.gstatic.com/generate_204&#39;
+   interval: 300
+</code></pre>
+<p>type:模式选择；这里选择了failback模式</p>
+<p>interval:同上</p>
+<p>说明：</p>
+<p>第一次（当你夜里用不稳定的移动光纤家宽上网）</p>
+<table>
+<thead>
+<tr>
+<th>HK1</th>
+<th>HK2</th>
+<th>TW1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No Response</td>
+<td>1000</td>
+<td>1500</td>
+</tr>
+</tbody>
+</table>
+<p>（延迟，单位毫秒(ms)）</p>
+<p>此时选择HK2节点</p>
+<p>过了三百秒第二次检测：</p>
+<table>
+<thead>
+<tr>
+<th>TW1</th>
+<th>HK1</th>
+<th>HK2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>450</td>
+<td>375</td>
+<td>1500</td>
+</tr>
+</tbody>
+</table>
+<p>此时依旧选择HK2节点联网</p>
+<p>又过了三百秒：</p>
+<table>
+<thead>
+<tr>
+<th>TW1</th>
+<th>HK1</th>
+<th>HK2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>300</td>
+<td>290</td>
+<td>No Response</td>
+</tr>
+</tbody>
+</table>
+<p>此时才会使用HK1节点</p>
+<p>此模式虽有用但不一定完全可用</p>
+<p>（延迟高到10^3ms可用吗？）</p>
+<p>负载均衡：</p>
+<p>与前面的工作方式也很类似，同样测延迟，但是并非只是单独一个节点，而是不同网站使用不同节点。</p>
+<pre><code class="Yaml"> load-balance: 
+ - name: &quot;负载均衡&quot;
+   type: load-balance
+   proxies:
+     - &quot;1&quot;
+     - &quot;2&quot;
+     - &quot;3&quot;
+     - &quot;4&quot;
+   url: &#39;http://www.gstatic.com/generate_204&#39;
+   interval: 300
+
+</code></pre>
+<p>type为load-balance表示此（负载均衡模式）</p>
+<p>url及interval见上。</p>
+<p>这也就是为何称作“负载均衡”：不同流量不同代理，（理论）可以减轻服务器负载。</p>
+<p>stragery:关键参数；</p>
+<p>选项有叁：</p>
+<ol>
+<li>不填</li>
+<li>consistent-hashing</li>
+<li>round-robin</li>
+</ol>
+<p>第二项大致是对于同一个ip/网址下的请求都使用同一个节点。</p>
+<p>（比如Google只用Hk1）</p>
+<p>C项则是轮换；（爬虫事务有效——一直用一个节点会被拉清单的）</p>
+<p>（友情提示：<strong>如果你的机场禁止批量测速/测延迟，那么以上三种策略请勿使用，否则会因为违反TOS被机场拉清单</strong>）</p>
+<p>链式代理：</p>
+<p>简单讲就是套娃；</p>
+<p>比如你在校内找到了无线网，但是无线网需要认证啊，</p>
+<p>这时候你发现不认证的时候校内有一台机器可以直连，这时候你“挪为私用”，在上面配置好Nodejs与npm，装好了SS-nodejs(ps:电信网直连npm不算慢)</p>
+<p>可是你的机场只用v2ray啊，他不支持前置代理，这就很内啥，，</p>
+<p>这时候Clash的链式代理就可以出场了。</p>
+<pre><code class="Yaml">
+- name: &quot;OUTSIDE&quot;
+  type: relay
+  proxies:
+  - &quot;出口&quot;
+  - &quot;自选&quot;
+</code></pre>
+<p>“出口”当然是你的自己搭建的ss</p>
+<p>“自选”就是你选定的连接外网的节点组。</p>
+<p>（ps:<strong>安全性很抱歉我们不能确保，就像你搭的SS如果被学校抓了，很难说不会出一个处分。这个问题不是一个clash客户端该讨论的，而是相对于这个协议来讨论的</strong>）</p>
+<p>接下来是Rule部分：</p>
+<p>这一部分可以说是Clash的关键：<br></p>
+<p><em>Clash 是一款用Go 语言编写的、基于规则的隧道（Tunnel ）程序，它支持多种加密通信协议和跨平台</em></p>
+<pre><code class="Yaml">Rule:
+- DOMAIN-SUFFIX,google.cn,DIRECT
+</code></pre>
+<p>此句定义了一个规则：</p>
+<p>DOMAIN-SUFFIX:按域名前缀匹配，此处即”*.google.cn”</p>
+<p>DIRECT:直连</p>
+<pre><code class="Yaml">- DOMAIN-KEYWORD,twitter,自选
+</code></pre>
+<p>DOMAIN-KEYWORD:以关键词匹配，本例中匹配“twitter”（即凡是遇到twitter都走“自选”）</p>
+<pre><code class="Yaml">- USER-AGENT,niconico*,自选
+</code></pre>
+<p>USER-AGENT:用<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/User-Agent" target="_blank" rel="noopener">useragent字符串</a>进行匹配；（在本例中凡是遇到有niconico就走“自选”）</p>
+<pre><code class="Yaml">- DOMAIN,www.flash.cn,REJECT
+</code></pre>
+<p>DOMAIN:对<a href="https://www.flash.cn" target="_blank" rel="noopener">www.flash.cn</a>精准匹配</p>
+<p>REJECT:拒绝连接</p>
+<pre><code class="Yaml">- IP-CIDR,91.108.4.0/22,LowDelay,no-resolve
+</code></pre>
+<p>IP-CIDR:此句为<a href="https://zh.wikipedia.org/zh-hans/%E6%97%A0%E7%B1%BB%E5%88%AB%E5%9F%9F%E9%97%B4%E8%B7%AF%E7%94%B1" target="_blank" rel="noopener">CIDR语法</a><br>,可以使用<a href="https://zh.rakko.tools/tools/27/" target="_blank" rel="noopener">此计算器</a>来确定范围。</p>
+<p>no-resolve:告诉Clash不要去尝试解析来匹配这条规则，只处理「直接IP 访问」的请求。</p>
+<pre><code class="Yaml">
+- MATCH,Final
+
+</code></pre>
+<p>该句只能放在末尾，指定漏网之🐟该走哪个代理。</p>
+<p>通过结合以上内容可以很方便的拉出来一份代理清单。<br><br>Such As Telegram：</p>
+<pre><code class="Yaml">- DOMAIN-SUFFIX,t.me,PROXY
+- DOMAIN-SUFFIX,tlanyan.me,PROXY
+- DOMAIN-SUFFIX,tdesktop.com,PROXY
+- DOMAIN-SUFFIX,telegra.ph,PROXY
+- DOMAIN-SUFFIX,telegram.me,PROXY
+- DOMAIN-SUFFIX,telegram.org,PROXY
+- DOMAIN-SUFFIX,telesco.pe,PROXY
+- IP-CIDR,91.108.4.0/22,PROXY,no-resolve
+- IP-CIDR,91.108.8.0/22,PROXY,no-resolve
+- IP-CIDR,91.108.12.0/22,PROXY,no-resolve
+- IP-CIDR,91.108.16.0/22,PROXY,no-resolve
+- IP-CIDR,91.108.56.0/22,PROXY,no-resolve
+- IP-CIDR,149.154.160.0/20,PROXY,no-resolve
+- IP-CIDR,2001:b28:f23d::/48,PROXY,no-resolve
+- IP-CIDR,2001:b28:f23f::/48,PROXY,no-resolve
+- IP-CIDR,2001:67c:4e8::/48,PROXY,no-resolve
+</code></pre>
+<p>以上就是本期内容，我们下期再见（</p>
+
+        </div>
+        <!-- .entry-content -->
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+        </footer><!-- .entry-footer -->
+      </article>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+          
+            <div class="post-nepre half previous">
+          
+            <a href="/2021/07/22/Rime-config/" rel="prev">
+              <div class="background">
+                <img class="lazyload" src="https://jihulab.com/spss/cdn/-/raw/master/img/loader/orange.progress-bar-stripe-loader.svg" data-src="" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="">
+              </div>
+              <span class="label">
+              Previous Post</span>
+              <div class="info">
+                <h3>
+                rime的调校</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+        
+          
+            <div class="post-nepre half next">
+          
+            <a href="/2021/03/20/十六人格/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://jihulab.com/spss/cdn/-/raw/master/img/loader/orange.progress-bar-stripe-loader.svg" data-src="" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                十六人格入门</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
+      
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="" class="profile gravatar"><img src="" itemprop="image" alt="" height="70" width="70"></a>
+          <div class="meta">
+            <span class="title">Author</span>
+            <h3 itemprop="name">
+            <a href="" itemprop="url" rel="author"></a>
+            </h3>
+          </div>
+        </div>
+        <hr>
+        <p><i class="iconfont icon-write"></i></p>
+      </section>
+    </main><!-- #main -->
+  </div><!-- #primary -->
+</div>
+
+
+
+    </div>    
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="请输入关键词..."/>
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            // PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+    <!-- <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2023 Nekoha Shizuku<br>
+      powered_by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer> -->
+<footer id="colophon" class="site-footer" role="contentinfo">
+  <div class="site-info">
+    <div class="footertext">
+      <div class="img-preload">
+        <img src="https://jihulab.com/spss/cdn/-/raw/master/img/other/wordpress-rotating-ball-o.svg">
+        <img src="https://jihulab.com/spss/cdn/-/raw/master/img/other/disqus-preloader.svg">
+      </div>
+      
+    </div>
+    <div class="footer-device">
+    <p style="font-family: 'Ubuntu', sans-serif;">
+        <span style="color: #b9b9b9;">本站由Hexo原力驱动，托管于GitHub Pages.<br>All Right Reserved. <br>&copy 2022 Nekoha Shizuku Official  <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i></a>
+        </span>
+      </p>
+    </div>
+  </div><!-- .site-info -->
+</footer>
+
+
+
+<!-- <script src="/js/tocbot.js"></script> -->
+<script type="text/javascript" src="/js/lib.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+<script type="text/javascript" src="/js/InsightSearch.js"></script>
+<script type="text/javascript" src="/js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="/js/zoom.min.js"></script>
+<script type="text/javascript" src="/js/sakura-app.js"></script>
+<script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='https://cdn.bootcdn.net/ajax/libs/valine/1.3.4/Valine.min.js'></script>
+<script src="/js/botui.js"></script>
+<script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-203124212-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-203124212-1');
+</script>
+<script>console.log("Hello World!")</script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script> -->
+<script type="text/javascript">
+/* <![CDATA[ */
+if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+  var Poi = {"pjax":"1","movies":{"url": "https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn0101/raw/master/","name":"109819229-1-208.mp4","live":"close"},"windowheight":"fixed","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+} else {
+  var Poi = {"pjax":"1","movies":{"url": "https://gitee.com/c4e78670-7d9c-11eb-aafd/cdn0101/raw/master/","name":"109819229-1-208.mp4","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+}
+/* ]]> */
+
+</script>
+<script>
+$(document).ready(function() {
+  if ($(".toc").length > 0 && document.body.clientWidth > 1200) {
+    if ($(".pattern-center").length > 0) { //有图的情况
+      tocbot.init({
+          // Where to render the table of contents.
+          tocSelector: '.toc', // 放置目录的容器
+          // Where to grab the headings to build the table of contents.
+          contentSelector: '.entry-content', // 正文内容所在
+          // Which headings to grab inside of the contentSelector element.
+          scrollSmooth: true,
+          headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+          headingsOffset: -400,
+          scrollSmoothOffset: -85
+      });
+    } else {
+      tocbot.init({
+          // Where to render the table of contents.
+          tocSelector: '.toc', // 放置目录的容器
+          // Where to grab the headings to build the table of contents.
+          contentSelector: '.entry-content', // 正文内容所在
+          // Which headings to grab inside of the contentSelector element.
+          scrollSmooth: true,
+          headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+          headingsOffset: -85,
+          scrollSmoothOffset: -85
+      });
+    }
+    var offsetTop = $('.toc').offset().top - 95;
+    window.onscroll = function() {
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+      if (scrollTop >= offsetTop) {
+        $('.toc').addClass('toc-fixed');
+      } else {
+        $('.toc').removeClass('toc-fixed');
+      }
+    }
+  }
+});
+</script>
+
+    <div class="openNav no-select" style="height: 50px;">
+      <div class="iconflat no-select" style="width: 50px; height: 50px;">
+        <div class="icon"></div>
+      </div>
+      <div class="site-branding search-form-submit">
+        <i class="iconfont js-toggle-search iconsearch icon-search"></i>
+      </div>
+    </div>
+  </section>
+  <div id="mo-nav" class="">
+  <div class="m-avatar">
+    <img src="https://jihulab.com/spss/cdn/-/raw/master/img/avatar.jpg">
+  </div>
+  <p style="text-align: center; color: #333; font-weight: 900; font-family: 'Ubuntu', sans-serif; letter-spacing: 1.5px">さくら荘その貓貓樂園</p>
+  <p style="text-align: center; word-spacing: 20px;">
+    
+  </p>
+  <ul id="menu-new-1" class="menu">
+    
+      <li>
+        <a href="/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-fort-awesome faa-shake" aria-hidden="true"></i>
+            首页
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/archives">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-archive faa-shake" aria-hidden="true"></i>
+            归档
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/categories/技术/">
+                  <i class="fa fa-code" aria-hidden="true"></i>
+                  技术
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/生活/">
+                  <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                  生活
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/资源/">
+                  <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                  资源
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/随想/">
+                  <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                  随想
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/转载/">
+                  <i class="fa fa-book" aria-hidden="true"></i>
+                  转载
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="javascript:;">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-list-ul faa-vertical" aria-hidden="true"></i>
+            清单
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/music/">
+                  <i class="fa fa-headphones" aria-hidden="true"></i>
+                  歌单
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="/links/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-link faa-shake" aria-hidden="true"></i>
+            友人帐
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/donate/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-heart faa-pulse" aria-hidden="true"></i>
+            赞赏
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
+            关于
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/about/">
+                  <i class="fa fa-meetup" aria-hidden="true"></i>
+                  我？
+                </a>
+              </li>
+            
+              <li>
+                <a href="/theme-sakura/">
+                  <i class="fa iconfont icon-sakura" aria-hidden="true"></i>
+                  主题
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="/atom.xml">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-rss faa-pulse" aria-hidden="true"></i>
+            RSS
+          </span>
+        </a>
+        
+      </li>
+    
+  </ul>
+  <p style="text-align: center; font-size: 13px; color: #b9b9b9;"><i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i></p>
+</div>
+<button onclick="topFunction()" class="mobile-cd-top" id="moblieGoTop" title="Go to top" style="display: none;"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://gcore.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<style>
+  .aplayer .aplayer-lrc {
+    height: 35px;
+  }
+  .aplayer .aplayer-lrc p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px !important;
+  }
+  .aplayer .aplayer-lrc p.aplayer-lrc-current{
+    color: #FF1493;
+  }
+  .aplayer.aplayer-narrow .aplayer-body{
+    left: -66px !important;
+  }
+  .aplayer.aplayer-fixed .aplayer-lrc {
+    display: none;
+  }
+  .aplayer .aplayer-lrc.aplayer-lrc-hide {
+      display:none !important;
+  }
+  .aplayer.aplayer-fixed .lrc-show {
+    display: block;
+    background: rgba(255, 255, 255, 0.8);
+  }
+</style>
+<meting-js
+
+    id="164521381"
+
+    server="netease"
+
+    type="playlist"
+
+    fixed="true"
+
+    autoplay="false"
+
+    loop="all"
+
+    order="random"
+
+    preload="auto"
+
+    volume="0.7"
+
+    mutex="true"
+
+</meting-js>
+<script>
+  $(function(){
+    $('body').on('click', '.aplayer', function(){
+      if($('.aplayer-button').hasClass('aplayer-play')) {
+        $('.aplayer-lrc').removeClass('lrc-show');
+      } else {
+        $('.aplayer-lrc').addClass('lrc-show');
+      }
+    })
+  });
+</script>
+
+</body>
+</html>
